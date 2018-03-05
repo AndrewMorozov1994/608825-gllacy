@@ -7,35 +7,38 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-logo" href="№"><img src="img/logo.svg" alt="Логотип Глэйси"></a>
+        <a class="main-logo"><img src="img/logo.svg" alt="Логотип Глэйси"></a>
         <ul class="site-navigation">
-          <li><a href="Catalog.html"></a></li>
-          <li><a href="http://Payment.html"></a></li>
-          <li><a href="http://AboutCompany.html"></a></li>
+          <li>
+            <a href="http://catalog.html"></a>
+            <ul class="visually-hidden">    <!--Всплывающий список-->
+              <li>Новинки</li>
+              <li>Сливочное</li>
+              <li>Щербеты</li>
+              <li>Фруктовый лед</li>
+              <li>Мелорин</li>
+            </ul>                           <!--//-->
+          </li>
+          <li><a href="http://payment.html"></a></li>
+          <li><a href="http://aboutCompany.html"></a></li>
         </ul>
       </nav>
       <section class="control">
-        <div class="search">Поиск</div>
-        <div class="login">Вход</div>
-        <div class="crate">Корзина</div>
+        <div class="search">
+          <section class="search">Что ищем?</section>    <!--Всплывающий элемент--> <!--//-->
+        </div>
+        <div class="login">
+          <section class="visually-hidden">    <!--Всплывающий элемент-->
+            <p>Забыли пароль?</p>
+            <p>Новая регистрация</p>
+            <a href="#">Войти</a>
+          </section>                           <!--//-->
+          <p>Вход</p>
+        </div>
+        <div class="crate">
+          <p>Пусто</p>
+        </div>
       </section>
-      <!--Всплывающие элементы(набросок, не забыть доделать!!)-->
-      <ul class="visually-hidden">
-        <li>Новинки</li>
-        <li>Сливочное</li>
-        <li>Щербеты</li>
-        <li>Фруктовый лед</li>
-        <li>Мелорин</li>
-      </ul>
-      <section class="visually-hidden">
-        <p>Забыли пароль?</p>
-        <p>Новая регистрация</p>
-      </section>
-      <section class="search">Что ищем?</section>
-      <section class="visually-hidden">
-        <p>Мы обязательно вам ответим!</p>
-      </section>
-      <!--||-->
     </header>
     <main class="container">
       <section class="slider">
@@ -43,39 +46,51 @@
           <img src="#" alt="Крем-брюле и пломбир с малиновым джемом">
           <img src="#" alt="Шоколадный пломбир и лимонный сорбет">
           <img src="#" alt="Пломбир с помадкой и клубничный щербет">
+          <a href="#">Давайте оба!</a>
         </div>
-        <h2>Давайте оба!</h2>
       </section>
       <section class="salee-raze">
         <h3>Малинка даром!</h3>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <p>Хочу варенье!</p>
+        <a href="#">Хочу варенье!</a>
       </section>
       <section class="sale-chocolate">
         <h3>Шоколад даром!</h3>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        <p>Хочу шоколадки!</p>
+        <a href="#">Хочу шоколадки!</a>
       </section>
-      <ul class="hits">
+      <ul class="catalog-list">
         <li>
-          <img src="#" alt="Сливочное с апельчиновым джемом">
-          <p>310Р/<span>кг</span></p>
-          <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+          <div class="product-card">
+            <div class="hit"></div>
+            <img src="#" alt="Сливочное с апельчиновым джемом">
+            <p>310Р/<span>кг</span></p>
+            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>   кнопка Быстрый просмотр
+          </div>
         </li>
         <li>
-          <img src="#" alt="Сливочно-кофейное">
-          <p>380Р/<span>кг</span></p>
-          <p>Сливочно-кофейное с кусочками шоколада</p>
+          <div class="product-card">
+            <div class="hit"></div>
+            <img src="#" alt="Сливочно-кофейное">
+            <p>380Р/<span>кг</span></p>
+            <p>Сливочно-кофейное с кусочками шоколада</p>
+          </div>
         </li>
         <li>
-          <img src="#" alt="Сливочно-клубничное">
-          <p>355Р<span>кг</span></p>
-          <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+          <div class="product-card">
+            <div class="hit"></div>
+            <img src="#" alt="Сливочно-клубничное">
+            <p>355Р<span>кг</span></p>
+            <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+          </div>
         </li>
         <li>
-          <img src="#" alt="Сливочное крем-брюле">
-          <p>415Р<span>кг</span></p>
-          <p>Сливочное крем-брюле с карамельной подливкой</p>
+          <div class="product-card">
+            <div class="hit"></div>
+            <img src="#" alt="Сливочное крем-брюле">
+            <p>415Р<span>кг</span></p>
+            <p>Сливочное крем-брюле с карамельной подливкой</p>
+          </div>
         </li>
       </ul>
       <section class="seo">
@@ -83,10 +98,14 @@
         <ul class="making">
           <li>
             <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+          </li>
+          <li>
             <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
           </li>
           <li>
             <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          </li>
+          <li>
             <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
         </ul>
@@ -97,7 +116,7 @@
       </section>
       <section class="dispatch">
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-        <p>Отправить</p>
+        <a href="#">Отправить</a>
       </section>
       <section class="map">
         <div class="adress">
@@ -105,7 +124,11 @@
           <p><strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong></p>
           <p>Для заказов по телефону:</p>
           <p><strong>8 812 450-25-25</strong>(с 10 до 20 ежедневно)</p>
-          <p>Форма обратной связи</p>
+          <a href="#">Форма обратной связи</a>
+          <section class="visually-hidden">     <!--Всплывающая форма-->
+            <p>Мы обязательно вам ответим!</p>
+            <a href="#">Отправить</a>
+          </section>                            <!--//-->
         </div>
       </section>
     </main>
@@ -130,8 +153,10 @@
           <a href="#">Экологические стандарты</a>
         </li>
       </ul>
-      <section class="html-logo"><a href="#"></a></section>
-      <section class="copyright">Сделано в HTML Academy © 2017</section>
+      <div>
+        <div class="html-logo"><a href="#"></a></div>
+        <div class="copyright">Сделано в HTML Academy © 2017</div>
+      </div>
     </footer>
   </body>
 </html>
