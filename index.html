@@ -9,7 +9,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-logo">
-          <img src="img/svg-gllacy/logo.svg"  alt="Логотип Глэйси">
+          <img src="img/svg-gllacy/logo.svg" alt="Логотип Глэйси">
         </a>
         <ul class="site-navigation">
           <li>
@@ -52,9 +52,9 @@
     <main class="container">
       <section class="slider">
         <div class="slider-slides">
-          <img src="img/slider/ice_bg1.png" alt="Крем-брюле и пломбир с малиновым джемом">
-          <img class="visually-hidden" src="img/slider/ice_bg2.png" alt="Шоколадный пломбир и лимонный сорбет">
-          <img class="visually-hidden" src="img/slider/ice_bg3.png" alt="Пломбир с помадкой и клубничный щербет">   <!--Временно скрыл, чтобы не мешали-->
+          <img src="img/slider/ice_bg1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
+          <img class="visually-hidden" width="1065" height="859" src="img/slider/ice_bg2.png" alt="Шоколадный пломбир и лимонный сорбет">
+          <img class="visually-hidden" width="1079" height="854" src="img/slider/ice_bg3.png" alt="Пломбир с помадкой и клубничный щербет">   <!--Временно скрыл, чтобы не мешали-->
           <a href="#">Давайте оба!</a>
         </div>
       </section>
@@ -72,7 +72,7 @@
         <li>
           <div class="product-card">
             <div class="hit"></div>
-            <img src="img/ice_items/creamy_orange.jpg" alt="Сливочное с апельчиновым джемом">
+            <img src="img/ice_items/creamy_orange.jpg" width="267" height="267" alt="Сливочное с апельчиновым джемом">
             <p>310Р/<span>кг</span></p>
             <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>   кнопка Быстрый просмотр
           </div>
@@ -80,7 +80,7 @@
         <li>
           <div class="product-card">
             <div class="hit"></div>
-            <img src="img/ice_items/creamy_coffee.jpg" alt="Сливочно-кофейное">
+            <img src="img/ice_items/creamy_coffee.jpg" width="267" height="267" alt="Сливочно-кофейное">
             <p>380Р/<span>кг</span></p>
             <p>Сливочно-кофейное с кусочками шоколада</p>
           </div>
@@ -88,7 +88,7 @@
         <li>
           <div class="product-card">
             <div class="hit"></div>
-            <img src="img/ice_items/creamy_srrowberry.jpg" alt="Сливочно-клубничное">
+            <img src="img/ice_items/creamy_srrowberry.jpg" width="267" height="267" alt="Сливочно-клубничное">
             <p>355Р<span>кг</span></p>
             <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
           </div>
@@ -96,7 +96,7 @@
         <li>
           <div class="product-card">
             <div class="hit"></div>
-            <img src="img/ice_items/creamy_caramel.jpg" alt="Сливочное крем-брюле">
+            <img src="img/ice_items/creamy_caramel.jpg" width="267" height="267" alt="Сливочное крем-брюле">
             <p>415Р<span>кг</span></p>
             <p>Сливочное крем-брюле с карамельной подливкой</p>
           </div>
@@ -125,10 +125,14 @@
       </section>
       <section class="dispatch">
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-        <a href="#">Отправить</a>
+        <form action="#">
+          <label for="email"><span class="visually-hidden">Email</span></label>       <!--Поле ввода почты-->
+          <input type="email" id="email" name="email" placeholder="Электронная почта">
+        </form>
+        <button type="submit" value="Отправить">Отправить</button>
       </section>
       <section class="map">
-        <img src="img/map_footer.jpg" alt="Карта">
+        <img src="img/map_footer.jpg" width="1200" height="640" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <div class="adress">
           <p>Адрес главного офиса и офлайн-магазина:</p>
           <p><strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong></p>
@@ -137,7 +141,14 @@
           <a href="#">Форма обратной связи</a>
           <section class="visually-hidden">     <!--Всплывающая форма-->
             <p>Мы обязательно вам ответим!</p>
-            <a href="#">Отправить</a>
+            <form action="#">
+              <label for="your_name"></label>
+              <input type="text" id="your_name" name="your_name" placeholder="Как вас зовут?">
+              <label for="email_form"></label>
+              <input type="email" id="email_form" placeholder="Ваша почта для ответа?">
+              <textarea name="comment" id="comment_field" cols="30" rows="10">Напишите что-нибудь...</textarea>
+              <button type="submit" value="Отправить">Отправить</button>
+            </form>
           </section>                            <!--//-->
         </div>
       </section>
