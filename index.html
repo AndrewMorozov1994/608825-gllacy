@@ -150,12 +150,13 @@
           <p>Для заказов по телефону:</p>
           <p><strong>8 812 450-25-25</strong>(с 10 до 20 ежедневно)</p>
           <a href="#">Форма обратной связи</a>
-          <section class="visually-hidden">     <!--Всплывающая форма-->
-            <p>Мы обязательно вам ответим!</p>
+          <fieldset class="feedback visually-hidden">     <!--Всплывающая форма-->
+            <legend>Мы обязательно вам ответим!</legend>
             <form action="#">
-              <label for="your_name"></label>
+              <button type="button" name="exit"><span class="visually-hidden">Закрыть</span></button>
+              <label for="your_name" class="visually-hidden">Как вас зовут?</label>
               <input type="text" id="your_name" name="your_name" placeholder="Как вас зовут?">
-              <label for="email_form"></label>
+              <label for="email_form" class="visually-hidden">Ваша почта для ответа</label>
               <input type="email" id="email_form" placeholder="Ваша почта для ответа?">
               <textarea name="comment" id="comment_field" cols="30" rows="10">Напишите что-нибудь...</textarea>
               <button type="submit" value="Отправить">Отправить</button>

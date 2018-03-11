@@ -52,7 +52,36 @@
         <a href="#">Вход</a>
       </div>
       <div class="crate">
-        <a href="#">Пусто</a>
+        <a href="#">2 товара</a>
+        <section class="crate-full visually-hidden">
+          <table>
+            <tr>
+              <td>
+                <button type="button" name="exit">
+                <span class="visually-hidden">Удалить</span>
+                </button>
+              </td>
+              <td><span class="visually-hidden">Изображение</span></td>
+              <td>Пломбир с апельсиновым джемом</td>
+              <td>1,5 кг х 200 руб</td>
+              <td>300 руб.</td>
+            </tr>
+            <tr>
+              <td>
+                <button type="button" name="exit">
+                <span class="visually-hidden">Удалить</span>
+                </button>
+              </td>
+              <td><span class="visually-hidden">Изображение</span></td>
+              <td>Клубничный пломбир с присыпкой
+                из белого шоколада</td>
+              <td>1,5 кг х 300 руб</td>
+              <td>450 руб.</td>
+            </tr>
+          </table>
+          <p>Итого:750 руб.</p>
+          <a href="#">Оформить заказ</a>
+        </section>
       </div>
     </section>
     <div class="mode">
@@ -73,13 +102,16 @@
         <legend class="visually-hidden">Элементы фильтра</legend>
         <form class="sorting" method="post">
           <p>Сортировка:</p>
-          <select name="catalog-sorting">
+          <select name="catalog-select-sorting">
                 <option value="popular">по популярности</option>
                 <option value="cheap">сначала недорогие</option>
                 <option value="rich">сначала дорогие</option>
                 <option value="calories">по жирности</option>
           </select>
-          <input type="range" multiple min="100" max="500" step="1">          <!--2 ползунка реализуются только с помощью скрипта?-->
+          <div class="catalog-price-sorting">
+          <label for="range-sorting">Цена: 100 руб. – 500 руб.</label>
+          <input type="range" id="range-sorting" min="100" max="500" step="1">          <!--2 ползунка реализуются только с помощью скрипта?-->
+          </div>
           <div class="radiobutton-sorting">
             <input type="radio" name="radiobutton" value="0">0%
             <input type="radio" name="radiobutton" value="10" checked>до 10%
@@ -95,9 +127,6 @@
           </div>
           <button type="submit" value="Применить">Применить</button>
         </form>
-        <section class="catalog-price-sorting">
-          <p>Цена</p>
-        </section>
       </fieldset>
       <section class="catalog-items">
         <!--Доделать-->
