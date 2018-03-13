@@ -31,8 +31,8 @@
         <a href="#"><span>Поиск</span></a>
         <section class="control-search-form visually-hidden">
           <form action="#" method="post">
-            <label for="search"></label>
-            <input type="search" id="search">Что ищем?
+            <input type="search" placeholder="Что ищем?">
+            <button type="submit">Отправить</button>
           </form>
         </section>    <!--Всплывающий элемент, форма поиска--> <!--//-->
       </div>
@@ -44,7 +44,7 @@
             <input type="text" name="email" id="email-field" placeholder="Электронная почта">
             <label for="password-field"></label>
             <input type="password" name="password" id="password-field" placeholder="Пароль">
-            <button type="submit" value="Вход">Вход</button>                                   <!--Правильно ли оформлена кнопка для отправки формы?-->
+            <button type="submit">Вход</button>                                   <!--Правильно ли оформлена кнопка для отправки формы?-->
           </form>
           <a href="#">Забыли пароль?</a>
           <a href="#">Новая регистрация</a>
@@ -100,7 +100,7 @@
       <h2>Сливочное мороженое</h2>
       <fieldset class="filters">
         <legend class="visually-hidden">Элементы фильтра</legend>
-        <form class="sorting" method="post">
+        <form action="#" class="sorting" method="post">
           <p>Сортировка:</p>
           <select name="catalog-select-sorting">
                 <option value="popular">по популярности</option>
@@ -113,17 +113,35 @@
           <input type="range" id="range-sorting" min="100" max="500" step="1">          <!--2 ползунка реализуются только с помощью скрипта?-->
           </div>
           <div class="radiobutton-sorting">
-            <input type="radio" name="radiobutton" value="0">0%
-            <input type="radio" name="radiobutton" value="10" checked>до 10%
-            <input type="radio" name="radiobutton" value="30">до 30%
-            <input type="radio" name="radiobutton" value=">30">выше 30%
+            <label>
+              <input type="radio" name="radiobutton" value="0">0%
+            </label>
+            <label>
+              <input type="radio" name="radiobutton" value="10" checked>до 10%
+            </label>
+            <label>
+              <input type="radio" name="radiobutton" value="30">до 30%
+            </label>
+            <label>
+              <input type="radio" name="radiobutton" value=">30">выше 30%
+            </label>
           </div>
           <div class="checkbox-sorting">
-            <input type="checkbox" name="chocolate" value="">шоколадные
-            <input type="checkbox" name="sugar" value="">сахарные присыпки
-            <input type="checkbox" name="fruit" value="">фрукты
-            <input type="checkbox" name="syrup" value="">сиропы
-            <input type="checkbox" name="jam" value="">джем
+            <label>
+              <input type="checkbox" name="chocolate">шоколадные
+            </label>
+            <label>
+              <input type="checkbox" name="sugar">сахарные присыпки
+            </label>
+            <label>
+              <input type="checkbox" name="fruit">фрукты
+            </label>
+            <label>
+              <input type="checkbox" name="syrup">сиропы
+            </label>
+            <label>
+              <input type="checkbox" name="jam">джем
+            </label>
           </div>
           <button type="submit" value="Применить">Применить</button>
         </form>

@@ -40,10 +40,12 @@
           <fieldset class="visually-hidden">    <!--Всплывающий элемент-->
             <legend class="visually-hidden">Форма входа</legend>
             <form action="#" method="post">
-              <label for="email-field"></label>
-              <input type="text" name="email" id="email-field" placeholder="Электронная почта">
-              <label for="password-field"></label>
-              <input type="password" name="password" id="password-field" placeholder="Пароль">
+              <label>
+                <input type="email" name="email" placeholder="Электронная почта">
+              </label>
+              <label>
+                <input type="password" name="password" placeholder="Пароль">
+              </label>
               <button type="submit" value="Вход">Вход</button>                                   <!--Правильно ли оформлена кнопка для отправки формы?-->
             </form>
             <a href="#">Забыли пароль?</a>
@@ -139,8 +141,8 @@
         <form action="#" method="post">
           <label for="email"><span class="visually-hidden">Email</span></label>       <!--Поле ввода почты-->
           <input type="email" id="email" name="email" placeholder="Электронная почта">
+          <button type="submit">Отправить</button>
         </form>
-        <button type="submit" value="Отправить">Отправить</button>
       </section>
       <section class="map">
         <img src="img/map_footer.jpg" width="1200" height="640" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
@@ -152,16 +154,18 @@
           <a href="#">Форма обратной связи</a>
           <fieldset class="feedback visually-hidden">     <!--Всплывающая форма-->
             <legend>Мы обязательно вам ответим!</legend>
-            <form action="#">
-              <button type="button" name="exit"><span class="visually-hidden">Закрыть</span></button>
+            <form action="#" method="post">
+              <button type="button"><span class="visually-hidden">Закрыть</span></button>
               <label for="your_name" class="visually-hidden">Как вас зовут?</label>
               <input type="text" id="your_name" name="your_name" placeholder="Как вас зовут?">
               <label for="email_form" class="visually-hidden">Ваша почта для ответа</label>
               <input type="email" id="email_form" placeholder="Ваша почта для ответа?">
-              <textarea name="comment" id="comment_field" cols="30" rows="10">Напишите что-нибудь...</textarea>
+              <label>
+                <textarea name="comment" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+              </label>
               <button type="submit" value="Отправить">Отправить</button>
             </form>
-          </section>                            <!--//-->
+          </fieldset>                            <!--//-->
         </div>
       </section>
     </main>
