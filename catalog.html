@@ -37,18 +37,13 @@
         </section>    <!--Всплывающий элемент, форма поиска--> <!--//-->
       </div>
       <div class="control-login">
-        <fieldset class="visually-hidden">    <!--Всплывающий элемент-->
-          <legend class="visually-hidden">Форма входа</legend>
-          <form action="#" method="post">
-            <label for="email-field"></label>
-            <input type="text" name="email" id="email-field" placeholder="Электронная почта">
-            <label for="password-field"></label>
-            <input type="password" name="password" id="password-field" placeholder="Пароль">
-            <button type="submit">Вход</button>                                   <!--Правильно ли оформлена кнопка для отправки формы?-->
-          </form>
+        <form action="#" method="post">                                         <!--Всплывающий элемент-->
+          <input type="email" name="email" placeholder="Электронная почта">
+          <input type="password" name="password" placeholder="Пароль">
           <a href="#">Забыли пароль?</a>
           <a href="#">Новая регистрация</a>
-        </fieldset>                           <!--//-->
+          <button type="submit">Вход</button>                                   <!--Правильно ли оформлена кнопка для отправки формы?-->
+        </form>
         <a href="#">Вход</a>
       </div>
       <div class="crate">
@@ -143,7 +138,7 @@
               <input type="checkbox" name="jam">джем
             </label>
           </div>
-          <button type="submit" value="Применить">Применить</button>
+          <button type="submit">Применить</button>
         </form>
       </fieldset>
       <section class="catalog-items">

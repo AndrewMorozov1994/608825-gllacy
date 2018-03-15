@@ -31,27 +31,20 @@
           <a href="#"><span>Поиск</span></a>
           <section class="control-search-form visually-hidden">
             <form action="#" method="post">
-              <label for="search"></label>
-                <input type="search" id="search">Что ищем?
+              <input type="search" placeholder="Что ищем?">
+              <button type="submit">Отправить</button>
             </form>
           </section>    <!--Всплывающий элемент, форма поиска--> <!--//-->
         </div>
         <div class="control-login">
-          <fieldset class="visually-hidden">    <!--Всплывающий элемент-->
-            <legend class="visually-hidden">Форма входа</legend>
-            <form action="#" method="post">
-              <label>
+            <form action="#" method="post">                                         <!--Всплывающий элемент-->
                 <input type="email" name="email" placeholder="Электронная почта">
-              </label>
-              <label>
                 <input type="password" name="password" placeholder="Пароль">
-              </label>
-              <button type="submit" value="Вход">Вход</button>                                   <!--Правильно ли оформлена кнопка для отправки формы?-->
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+                <button type="submit">Вход</button>                                   <!--Правильно ли оформлена кнопка для отправки формы?-->
             </form>
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
-          </fieldset>                                      <!--//-->
-          <a href="#">Вход</a>
+            <a href="#">Вход</a>
         </div>
         <div class="crate">
           <a href="#">Пусто</a>
@@ -139,8 +132,7 @@
       <section class="dispatch">
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
         <form action="#" method="post">
-          <label for="email"><span class="visually-hidden">Email</span></label>       <!--Поле ввода почты-->
-          <input type="email" id="email" name="email" placeholder="Электронная почта">
+          <input type="email" name="email" placeholder="Электронная почта">
           <button type="submit">Отправить</button>
         </form>
       </section>
@@ -152,20 +144,25 @@
           <p>Для заказов по телефону:</p>
           <p><strong>8 812 450-25-25</strong>(с 10 до 20 ежедневно)</p>
           <a href="#">Форма обратной связи</a>
-          <fieldset class="feedback visually-hidden">     <!--Всплывающая форма-->
-            <legend>Мы обязательно вам ответим!</legend>
-            <form action="#" method="post">
-              <button type="button"><span class="visually-hidden">Закрыть</span></button>
-              <label for="your_name" class="visually-hidden">Как вас зовут?</label>
-              <input type="text" id="your_name" name="your_name" placeholder="Как вас зовут?">
-              <label for="email_form" class="visually-hidden">Ваша почта для ответа</label>
-              <input type="email" id="email_form" placeholder="Ваша почта для ответа?">
-              <label>
-                <textarea name="comment" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
-              </label>
-              <button type="submit" value="Отправить">Отправить</button>
-            </form>
-          </fieldset>                            <!--//-->
+            <section class="modal-feedback">                            <!--Всплывающая форма-->
+              <h3>Мы обязательно вам ответим!</h3>
+              <form action="#" method="post">
+                <p class="user-name">
+                  <label for="your_name" class="visually-hidden">Как вас зовут?</label>
+                  <input type="text" id="your_name" name="your_name" placeholder="Как вас зовут?">
+                </p>
+                <p class="user-email">
+                  <label for="email_form" class="visually-hidden">Ваша почта для ответа</label>
+                  <input type="email" id="email_form" placeholder="Ваша почта для ответа?">
+                </p>
+                <p class="user-text">
+                  <label for="user-comment" class="visually-hidden">Напишите что нибудь</label>
+                  <textarea name="comment" id="user-comment" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+                </p>
+                <button class="button" type="submit">Отправить</button>
+                <button class="modal-close" type="button">Закрыть</button>
+              </form>
+            </section>                                                          <!--//-->
         </div>
       </section>
     </main>
