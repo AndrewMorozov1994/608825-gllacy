@@ -38,17 +38,17 @@
           </section>    <!--Всплывающий элемент, форма поиска--> <!--//-->
         </div>
         <div class="control-login">
-            <form action="#" method="post">                                         <!--Всплывающий элемент-->
+            <form action="#" class="visually-hidden" method="post">                                         <!--Всплывающий элемент-->
                 <input type="email" name="email" placeholder="Электронная почта">
                 <input type="password" name="password" placeholder="Пароль">
                 <a href="#">Забыли пароль?</a>
                 <a href="#">Новая регистрация</a>
                 <button class="button" type="submit">Вход</button>                                   <!--Правильно ли оформлена кнопка для отправки формы?-->
             </form>
-            <a href="#">Вход</a>
+            <a class="btn" href="#">Вход</a>
         </div>
         <div class="crate">
-          <a href="#">Пусто</a>
+          <a class="btn" href="#">Пусто</a>
         </div>
       </section>
       <div class="mode">
@@ -62,19 +62,21 @@
           <img src="img/slider/ice_bg1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
           <img class="visually-hidden" width="1065" height="859" src="img/slider/ice_bg2.png" alt="Шоколадный пломбир и лимонный сорбет">
           <img class="visually-hidden" width="1079" height="854" src="img/slider/ice_bg3.png" alt="Пломбир с помадкой и клубничный щербет">   <!--Временно скрыл, чтобы не мешали-->
-          <a href="#">Давайте оба!</a>
+          <a class="btn" href="#">Давайте оба!</a>
         </div>
       </section>
-      <section class="sale-raze">
-        <h3>Малинка даром!</h3>
-        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <a href="#">Хочу варенье!</a>
-      </section>
-      <section class="sale-chocolate">
-        <h3>Шоколад даром!</h3>
-        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        <a href="#">Хочу шоколадки!</a>
-      </section>
+      <div class="sale-wrapper">
+        <section class="sale-raze">
+          <h3>Малинка даром!</h3>
+          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a class="btn" href="#">Хочу варенье!</a>
+        </section>
+        <section class="sale-chocolate">
+          <h3>Шоколад даром!</h3>
+          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <a class="btn" href="#">Хочу шоколадки!</a>
+        </section>
+      </div>
       <ul class="catalog-list">
         <li>
           <div class="product-card">
@@ -144,7 +146,7 @@
           <p><strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong></p>
           <p>Для заказов по телефону:</p>
           <p><strong>8 812 450-25-25</strong>(с 10 до 20 ежедневно)</p>
-          <a href="#">Форма обратной связи</a>
+          <a class="btn" href="#">Форма обратной связи</a>
             <section class="modal-feedback">                            <!--Всплывающая форма-->
               <h3>Мы обязательно вам ответим!</h3>
               <form action="#" method="post">
