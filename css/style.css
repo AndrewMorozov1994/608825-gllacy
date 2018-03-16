@@ -4,18 +4,17 @@ display:none;
 body{
   margin: 0;
   padding: 0;
-
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 33.52px;
   background-color: #282828;
+  color: #ffffff;
 }
 .button {
   font: inherit;
 
   text-align: center;
-  color: #ffffff;
   vertical-align: middle;
   border: none;
   background-image: linear-gradient(90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
@@ -27,17 +26,21 @@ body{
 .button:active{
 
 }
-.site-navigation a {
+.site-navigation{
+  list-style: none;
+}
+.site-navigation a,
+.control-login a,
+.crate a {
   color: #ffffff;
+}
+.site-navigation a{
   line-height: 18px;
 }
-.control-login a, .crate a{
-  color: #ffffff;
-}
+
 .control, .mode{
   font-size: 14px;
   line-height: 16px;
-  color: #ffffff;
 }
 .mode p:last-child{
   font-size: 22px;
@@ -55,7 +58,6 @@ body{
   text-decoration: none;
 }
 .sale-wrapper{
-  color: #ffffff;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
@@ -66,8 +68,98 @@ body{
   font-weight: 700;
 }
 .sale-raze{
-  background: url("../img/raspberries_bg.jpg") no-repeat;
+  background-image: url("../img/raspberries_bg.jpg");
+  background-repeat:no-repeat;
+  width: 560px;
+  min-height: 229px;
 }
 .sale-chocolate{
-  background: no-repeat url("../img/chocolate_bg.jpg") ;
+  background-image: url("../img/chocolate_bg.jpg");
+  background-repeat:no-repeat;
+  width: 560px;
+  min-height: 229px;
+}
+.catalog-list{
+  list-style: none;
+  line-height: 22px;
+}
+.item-price{
+  font-size: 45px;
+  font-weight: 700;
+}
+.weight{
+  font-size: 30px;
+  font-weight: 400;
+}
+.product-card p:last-child{
+  text-decoration: underline;
+}
+.seo{
+background: no-repeat url("../img/waffle_bg.jpg");
+  color: #323232;
+  line-height: 22px;
+  font-weight: 400;
+  width: 1146px;
+}
+.seo h3{
+  font-size: 24px;
+  line-height: 30px;
+}
+.making {
+  list-style: none;
+}
+.blog-news{
+  background-color: #ffffff;
+  background-image:  url("../img/strowberry_bg_news.jpg");
+  background-repeat:no-repeat;
+  color:#323232;
+  width: 560px;
+  min-height: 220px;
+}
+.blog-news a{
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+  font-weight: 700;
+}
+.dispatch{
+  line-height: 22px;
+  font-weight: 400;
+  color: #5a5a5a;
+  background-color: #f8f7f4;
+  width: 560px;
+  min-height: 220px;
+}
+.adress{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #323232;
+  width: 302px;
+  background-color: #fdfefe;
+}
+.adress strong{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.info{
+  list-style: none;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.info a{
+  color:#ffffff;
+  text-decoration: underline;
+}
+.for_suppliers{
+  font-weight: 700;
+}
+.copyright{
+  font-size: 12px;
+  color: white;
+}
+.copyright a{
+  color: white;
 }
