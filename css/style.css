@@ -1,6 +1,9 @@
+/*Временно, будет переделано*/
 .visually-hidden {
 display:none;
 }
+
+
 body{
   margin: 0;
   padding: 0;
@@ -11,9 +14,18 @@ body{
   background-color: #282828;
   color: #ffffff;
 }
+/*Цвет для всех ссылок*/
+a{
+  color:#ffffff;
+}
+/*для всех ссылок С ГРАДИЕНТОМ*/  /*не забыть расставить класс для нужных элементов в html*/
+.btn{
+  text-decoration: none;
+}
+/*Кнопки*/
 .button {
   font: inherit;
-
+  color: white;
   text-align: center;
   vertical-align: middle;
   border: none;
@@ -26,13 +38,9 @@ body{
 .button:active{
 
 }
+/*Навигация в шапке*/ /**/
 .site-navigation{
   list-style: none;
-}
-.site-navigation a,
-.control-login a,
-.crate a {
-  color: #ffffff;
 }
 .site-navigation a{
   line-height: 18px;
@@ -47,16 +55,17 @@ body{
   line-height: 24px;
   font-weight: 700;
 }
+
+
+/*Все для слайдера*/
 .slider-slides a{
   font-size: 32px;
   line-height: 44px;
   font-weight: 700;
-  color: #ffffff;
 }
-.btn{
-  color: #ffffff;
-  text-decoration: none;
-}
+
+
+/*Общий блок для малины и шоколада*/
 .sale-wrapper{
   font-size: 18px;
   line-height: 22px;
@@ -67,18 +76,24 @@ body{
   line-height: 41px;
   font-weight: 700;
 }
+
+/*Блок с малиной*/
 .sale-raze{
   background-image: url("../img/raspberries_bg.jpg");
   background-repeat:no-repeat;
   width: 560px;
   min-height: 229px;
 }
+
+/*Блок м шоколадом*/
 .sale-chocolate{
   background-image: url("../img/chocolate_bg.jpg");
   background-repeat:no-repeat;
   width: 560px;
   min-height: 229px;
 }
+
+/*Общий блок для хит-мороженок*/
 .catalog-list{
   list-style: none;
   line-height: 22px;
@@ -91,9 +106,12 @@ body{
   font-size: 30px;
   font-weight: 400;
 }
+/*Подчеркивание для названия мороженок */
 .product-card p:last-child{
   text-decoration: underline;
 }
+
+/*Все для вафельки*/
 .seo{
 background: no-repeat url("../img/waffle_bg.jpg");
   color: #323232;
@@ -105,9 +123,12 @@ background: no-repeat url("../img/waffle_bg.jpg");
   font-size: 24px;
   line-height: 30px;
 }
+/*Список в вафле*/
 .making {
   list-style: none;
 }
+
+/*Новости блога*/
 .blog-news{
   background-color: #ffffff;
   background-image:  url("../img/strowberry_bg_news.jpg");
@@ -122,6 +143,8 @@ background: no-repeat url("../img/waffle_bg.jpg");
   color: #323232;
   font-weight: 700;
 }
+
+/*Рассылка*/
 .dispatch{
   line-height: 22px;
   font-weight: 400;
@@ -130,6 +153,8 @@ background: no-repeat url("../img/waffle_bg.jpg");
   width: 560px;
   min-height: 220px;
 }
+
+/*Блок с адресом на карте*/
 .adress{
   font-size: 14px;
   line-height: 20px;
@@ -143,6 +168,8 @@ background: no-repeat url("../img/waffle_bg.jpg");
   font-weight: 700;
   line-height: 24px;
 }
+
+/*Список ссылок в футере*/
 .info{
   list-style: none;
   font-size: 13px;
@@ -150,16 +177,83 @@ background: no-repeat url("../img/waffle_bg.jpg");
   line-height: 18px;
 }
 .info a{
-  color:#ffffff;
   text-decoration: underline;
 }
 .for_suppliers{
   font-weight: 700;
 }
+
+/*Копирайт*/
 .copyright{
   font-size: 12px;
   color: white;
 }
 .copyright a{
   color: white;
+}
+
+
+/*CATALOG HTML*/  /**/
+
+/*Активная страница с переходом*/
+.pages ul{
+  list-style: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+.pages a{
+  text-decoration: none;
+}
+.section_title{
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+}
+
+/*ФОРМЫ*/
+
+/*Общее*/
+.sorting p,
+.catalog-price-sorting,
+.radiobutton-sorting p{
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/*Форма селектор*/
+
+.sorting-select{
+  font-size: 16px;
+  line-height: 18px;
+  background-color: rgb(248, 247, 244);
+  opacity: 0.2;
+ }
+
+/*Форма сортировки по цене*/
+.range{
+  background-color: rgb(255, 255, 255);
+  opacity: 0.2;
+}
+
+/*Форма радиобаттонов*/
+.radiobutton-sorting label{
+  background-color: rgb(255, 255, 255);
+  opacity: 0.2;
+}
+
+/*Чекбоксы*/
+.checkbox-sorting label{
+  background: rgb(255, 255, 255);
+  opacity: 0.2;
+}
+
+/*Кнопка отправка формы*/
+.sorting-button{
+  font-size: 16px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 }
