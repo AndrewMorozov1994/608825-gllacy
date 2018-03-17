@@ -107,7 +107,7 @@ a{
   font-weight: 400;
 }
 /*Подчеркивание для названия мороженок */
-.product-card p:last-child{
+.underline{
   text-decoration: underline;
 }
 
@@ -201,10 +201,11 @@ background: no-repeat url("../img/waffle_bg.jpg");
   font-size: 14px;
   font-weight: 400;
 }
-.pages a{
+.active-page a{
   text-decoration: none;
 }
-.section_title{
+
+.section-title{
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
@@ -256,4 +257,15 @@ background: no-repeat url("../img/waffle_bg.jpg");
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+/*Каталог*/
+.items{
+  list-style: none;
+}
+
+/*Пагинатор*/
+.page-number{
+  list-style: none;
+}
+.page-number a{
+  text-decoration: none;
 }
