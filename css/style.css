@@ -226,26 +226,23 @@ background: no-repeat url("../img/waffle_bg.jpg");
 .sorting-select{
   font-size: 16px;
   line-height: 18px;
-  background-color: rgb(248, 247, 244);
-  opacity: 0.2;
+  background-color: rgba(248, 247, 244, 0.2);
+  color: white ;
  }
 
 /*Форма сортировки по цене*/
 .range{
-  background-color: rgb(255, 255, 255);
-  opacity: 0.2;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /*Форма радиобаттонов*/
 .radiobutton-sorting label{
-  background-color: rgb(255, 255, 255);
-  opacity: 0.2;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /*Чекбоксы*/
 .checkbox-sorting label{
-  background: rgb(255, 255, 255);
-  opacity: 0.2;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /*Кнопка отправка формы*/
