@@ -28,33 +28,35 @@
           <li><a href="http://aboutCompany.html">О компании</a></li>
         </ul>
       </nav>
-      <section class="control">
-        <div class="control-search">
-          <a href="#"><span>Поиск</span></a>
-          <section class="control-search-form visually-hidden">
-            <form action="#" method="post">
-              <input type="search" placeholder="Что ищем?">
-              <button type="submit">Отправить</button>
-            </form>
-          </section>    <!--Всплывающий элемент, форма поиска--> <!--//-->
+      <div class="control-wrapper">
+        <section class="control">
+          <div class="control-search">
+            <a href="#"><span>Поиск</span></a>
+            <section class="control-search-form visually-hidden">
+              <form action="#" method="post">
+                <input type="search" placeholder="Что ищем?">
+                <button type="submit">Отправить</button>
+              </form>
+            </section>    <!--Всплывающий элемент, форма поиска--> <!--//-->
+          </div>
+          <div class="control-login">
+             <form action="#" class="visually-hidden" method="post">                                         <!--Всплывающий элемент-->
+                  <input type="email" name="email" placeholder="Электронная почта">
+                  <input type="password" name="password" placeholder="Пароль">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                  <button class="button" type="submit">Вход</button>                                   <!--Правильно ли оформлена кнопка для отправки формы?-->
+              </form>
+              <a class="btn" href="#">Вход</a>
+          </div>
+          <div class="crate">
+            <a class="btn" href="#">Пусто</a>
+          </div>
+        </section>
+        <div class="mode">
+          <p>с 10 до 20, ежедневно</p>
+          <p>8 812 450-25-25</p>
         </div>
-        <div class="control-login">
-            <form action="#" class="visually-hidden" method="post">                                         <!--Всплывающий элемент-->
-                <input type="email" name="email" placeholder="Электронная почта">
-                <input type="password" name="password" placeholder="Пароль">
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-                <button class="button" type="submit">Вход</button>                                   <!--Правильно ли оформлена кнопка для отправки формы?-->
-            </form>
-            <a class="btn" href="#">Вход</a>
-        </div>
-        <div class="crate">
-          <a class="btn" href="#">Пусто</a>
-        </div>
-      </section>
-      <div class="mode">
-        <p>с 10 до 20, ежедневно</p>
-        <p>8 812 450-25-25</p>
       </div>
     </header>
     <main class="container">
@@ -182,20 +184,20 @@
         <a class="social social-fb" href="#">Фейсбук</a>
         <a class="social social-vk" href="#">Вконтакте</a>
       </div>
-      <ul class="info">
-        <li>
-          <a class="for_suppliers" href="#">Для поставщиков</a>
-        </li>
-        <li>
-          <a href="#">О производстве</a>
-        </li>
-        <li>
-          <a href="#">Наши документы</a>
-        </li>
-        <li>
-          <a href="#">Экологические стандарты</a>
-        </li>
-      </ul>
+       <ul class="info">
+         <li>
+            <a class="for_suppliers" href="#">Для поставщиков</a>
+          </li>
+         <li>
+            <a href="#">О производстве</a>
+          </li>
+          <li>
+            <a href="#">Наши документы</a>
+          </li>
+         <li>
+            <a href="#">Экологические стандарты</a>
+          </li>
+        </ul>
       <div>
         <div class="html-logo"><a href="#"></a>
           <img src="img/svg-gllacy/logo-htmlacademy.svg" width="108" height="39" alt="">

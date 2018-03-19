@@ -14,6 +14,7 @@ body{
   background-color: #282828;
   color: #ffffff;
 }
+
 /*Цвет для всех ссылок*/
 a{
   color:#ffffff;
@@ -39,8 +40,24 @@ a{
 
 }
 /*Навигация в шапке*/ /**/
+
+.main-header{
+  margin: 0 auto;
+  background-color: transparent;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-navigation{
+  display: flex;
+  justify-content: space-between;
+}
+.site-navigation li{
+  padding-left: 20px;
+}
 .site-navigation{
   list-style: none;
+  display: flex;
 }
 .site-navigation a{
   line-height: 18px;
@@ -55,21 +72,43 @@ a{
   line-height: 24px;
   font-weight: 700;
 }
+.control {
+  display: flex;
+}
 
-
+.control div{
+  padding-right: 10px;
+}
+.container{
+  margin: 0 auto;
+  margin-top: -127px;
+  width: 1200px;
+  background-color: #94aa9d;
+}
 /*Все для слайдера*/
+.slider-slides{
+  margin-left: 80px;
+}
 .slider-slides a{
   font-size: 32px;
   line-height: 44px;
   font-weight: 700;
+  position: absolute;
+  top: 500px;
+  left: 650px;
 }
 
 
 /*Общий блок для малины и шоколада*/
 .sale-wrapper{
+  margin: 0 auto;
+  margin-top: -245px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
+  width: 1146px;
+  display: flex;
+  justify-content: space-between;
 }
 .sale-wrapper h3{
   font-size: 35px;
@@ -91,12 +130,22 @@ a{
   background-repeat:no-repeat;
   width: 560px;
   min-height: 229px;
+  z-index: 2;
 }
 
 /*Общий блок для хит-мороженок*/
 .catalog-list{
+  width: 1146px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0;
   list-style: none;
   line-height: 22px;
+  display:flex;
+  justify-content: space-between;
+}
+.catalog-list li{
+  width: 267px;
 }
 .item-price{
   font-size: 45px;
@@ -113,22 +162,52 @@ a{
 
 /*Все для вафельки*/
 .seo{
-background: no-repeat url("../img/waffle_bg.jpg");
+  margin: 0 auto;
+
+  background: no-repeat url("../img/waffle_bg.jpg");
   color: #323232;
   line-height: 22px;
   font-weight: 400;
   width: 1146px;
+  min-height: 306px;
 }
 .seo h3{
   font-size: 24px;
   line-height: 30px;
+  padding-left: 20px;
+  padding-top: 10px;
 }
 /*Список в вафле*/
 .making {
+  margin:0;
+  padding:0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.making li{
+  width: 560px;
+}
+.making p{
+  padding-left: 75px;
+}
+.making li:nth-child(2){
+  order: 3;
+}
+.making li:nth-child(4){
+  order:3;
+}
+/*Новости блога*/
+
+.news_and_dispatch{
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 1146px;
+  display: flex;
+  justify-content: space-between;
 }
 
-/*Новости блога*/
+
 .blog-news{
   background-color: #ffffff;
   background-image:  url("../img/strowberry_bg_news.jpg");
@@ -169,12 +248,39 @@ background: no-repeat url("../img/waffle_bg.jpg");
   line-height: 24px;
 }
 
+/*Центровка футера*/
+.page-footer{
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #94aa9d;
+  display: flex;
+  justify-content: space-around;
+}
+.share{
+}
 /*Список ссылок в футере*/
+
 .info{
+  border:2px solid white;
+  padding: 0;
   list-style: none;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+}
+.info li{
+  border:2px solid white;
+  width:140px;
+}
+.info li:nth-child(2){
+  order: 3;
+}
+.info li:nth-child(4){
+  order:4;
+  width: 200px;
 }
 .info a{
   text-decoration: underline;
@@ -185,21 +291,30 @@ background: no-repeat url("../img/waffle_bg.jpg");
 
 /*Копирайт*/
 .copyright{
+
   font-size: 12px;
   color: white;
 }
 .copyright a{
   color: white;
-}
 
+}
+.html-logo{
+
+}
 
 /*CATALOG HTML*/  /**/
 
 /*Активная страница с переходом*/
+.pages{
+  padding-top: 80px;
+}
 .pages ul{
   list-style: none;
   font-size: 14px;
   font-weight: 400;
+  display: inline-block;
+
 }
 .active-page a{
   text-decoration: none;
@@ -255,13 +370,36 @@ background: no-repeat url("../img/waffle_bg.jpg");
 }
 
 /*Каталог*/
+.catalog-items{
+}
 .items{
+  margin: 0 auto;
+  padding: 0;
   list-style: none;
+  display: flex;
+  width: 1146px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.items li{
+  width: 267px;
 }
 
+
+
+
 /*Пагинатор*/
+.pagination{
+}
 .page-number{
+
+  display: flex;
+  justify-content: flex-end;
   list-style: none;
+  min-height: 50px;
+}
+.page-number li{
+  padding-right: 10px;
 }
 .page-number a{
   text-decoration: none;

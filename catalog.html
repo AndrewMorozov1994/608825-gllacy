@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   </head>
@@ -27,68 +28,70 @@
         <li><a href="http://aboutCompany.html">О компании</a></li>
       </ul>
     </nav>
-    <section class="control">
-      <div class="control-search">
-        <a href="#"><span>Поиск</span></a>
-        <section class="control-search-form visually-hidden">
-          <form action="#" method="post">
-            <input type="search" placeholder="Что ищем?">
-            <button type="submit">Отправить</button>
+    <div class="control-wrapper">
+      <section class="control">
+        <div class="control-search">
+         <a href="#"><span>Поиск</span></a>
+         <section class="control-search-form visually-hidden">
+           <form action="#" method="post">
+              <input type="search" placeholder="Что ищем?">
+              <button type="submit">Отправить</button>
+            </form>
+         </section>    <!--Всплывающий элемент, форма поиска--> <!--//-->
+       </div>
+        <div class="control-login">
+          <form class="visually-hidden" action="#" method="post">                                         <!--Всплывающий элемент-->
+            <input type="email" name="email" placeholder="Электронная почта">
+            <input type="password" name="password" placeholder="Пароль">
+            <a href="#">Забыли пароль?</a>
+             <a href="#">Новая регистрация</a>
+            <button class="button" type="submit">Вход</button>                                   <!--Правильно ли оформлена кнопка для отправки формы?-->
           </form>
-        </section>    <!--Всплывающий элемент, форма поиска--> <!--//-->
+          <a class="btn" href="#">Вход</a>
+       </div>
+       <div class="crate">
+         <a href="#">2 товара</a>
+         <section class="crate-full visually-hidden">
+            <table>
+              <tr>
+                <td>
+                  <button type="button" name="exit">
+                  <span class="visually-hidden">Удалить</span>
+                  </button>
+                </td>
+                <td><span class="visually-hidden">Изображение</span></td>
+                <td>Пломбир с апельсиновым джемом</td>
+                <td>1,5 кг х 200 руб</td>
+                <td>300 руб.</td>
+              </tr>
+              <tr>
+                <td>
+                  <button type="button" name="exit">
+                  <span class="visually-hidden">Удалить</span>
+                  </button>
+                </td>
+                <td><span class="visually-hidden">Изображение</span></td>
+                <td>Клубничный пломбир с присыпкой
+                  из белого шоколада</td>
+                <td>1,5 кг х 300 руб</td>
+                <td>450 руб.</td>
+              </tr>
+            </table>
+            <p>Итого:750 руб.</p>
+            <a href="#">Оформить заказ</a>
+          </section>
+        </div>
+      </section>
+      <div class="mode">
+        <p>с 10 до 20, ежедневно</p>
+        <p>8 812 450-25-25</p>
       </div>
-      <div class="control-login">
-        <form class="visually-hidden" action="#" method="post">                                         <!--Всплывающий элемент-->
-          <input type="email" name="email" placeholder="Электронная почта">
-          <input type="password" name="password" placeholder="Пароль">
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
-          <button type="submit">Вход</button>                                   <!--Правильно ли оформлена кнопка для отправки формы?-->
-        </form>
-        <a class="btn" href="#">Вход</a>
-      </div>
-      <div class="crate">
-        <a href="#">2 товара</a>
-        <section class="crate-full visually-hidden">
-          <table>
-            <tr>
-              <td>
-                <button type="button" name="exit">
-                <span class="visually-hidden">Удалить</span>
-                </button>
-              </td>
-              <td><span class="visually-hidden">Изображение</span></td>
-              <td>Пломбир с апельсиновым джемом</td>
-              <td>1,5 кг х 200 руб</td>
-              <td>300 руб.</td>
-            </tr>
-            <tr>
-              <td>
-                <button type="button" name="exit">
-                <span class="visually-hidden">Удалить</span>
-                </button>
-              </td>
-              <td><span class="visually-hidden">Изображение</span></td>
-              <td>Клубничный пломбир с присыпкой
-                из белого шоколада</td>
-              <td>1,5 кг х 300 руб</td>
-              <td>450 руб.</td>
-            </tr>
-          </table>
-          <p>Итого:750 руб.</p>
-          <a href="#">Оформить заказ</a>
-        </section>
-      </div>
-    </section>
-    <div class="mode">
-      <p>с 10 до 20, ежедневно</p>
-      <p>8 812 450-25-25</p>
     </div>
   </header>
     <main class="container">
       <div class="pages">
         <ul>
-          <li><a href="http://index.html">Главная</a></li>
+            <li><a href="http://index.html">Главная</a></li>
           <li><a href="#">Каталог</a></li>
           <li class="active-page"><a href="#">Сливочное</a></li>
         </ul>
