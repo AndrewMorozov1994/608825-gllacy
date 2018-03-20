@@ -146,6 +146,7 @@ a{
 }
 .catalog-list li{
   width: 267px;
+  word-wrap: break-word;
 }
 .item-price{
   font-size: 45px;
@@ -383,6 +384,7 @@ a{
 }
 .items li{
   width: 267px;
+  word-wrap: break-word;
 }
 
 
