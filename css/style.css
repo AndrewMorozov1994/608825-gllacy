@@ -337,6 +337,7 @@ a{
 .sale-raze,
 .sale-chocolate{
   border-radius: 15px;
+
 }
 .sale-chocolate p,
 .sale-raze p{
@@ -366,8 +367,9 @@ a{
 
 /*Блок с малиной*/
 .sale-raze{
+
   background-image: url("../img/raspberries_bg.jpg");
-  background-repeat:no-repeat;
+  background-repeat:repeat-y;
   width: 560px;
   min-height: 229px;
 }
@@ -375,7 +377,7 @@ a{
 /*Блок м шоколадом*/
 .sale-chocolate{
   background-image: url("../img/chocolate_bg.jpg");
-  background-repeat:no-repeat;
+  background-repeat:repeat-y;
   width: 560px;
   min-height: 229px;
   z-index: 2;
@@ -391,6 +393,7 @@ a{
   line-height: 22px;
   display:flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .catalog-list li{
   position: relative;
