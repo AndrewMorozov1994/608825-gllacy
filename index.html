@@ -59,7 +59,7 @@
         </div>
       </div>
     </header>
-    <main class="containerrr">
+    <main class="main-container">
       <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
       <input class="visually-hidden" type="radio" id="product-2" name="toggle">
       <input class="visually-hidden" type="radio" id="product-3" name="toggle">
@@ -99,12 +99,12 @@
         <section class="sale-raze">
           <h3>Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a class="btn" href="#">Хочу варенье!</a>
+          <a class="btn btn-raze" href="#">Хочу варенье!</a>
         </section>
         <section class="sale-chocolate">
-          <h3>Шоколад даром!</h3>
+          <h3>Шоколадки даром!</h3>
           <p >При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a class="btn" href="#">Хочу шоколадки!</a>
+          <a class="btn btn-chocolate" href="#">Хочу шоколадки!</a>
         </section>
       </div>
       <ul class="catalog-list">
@@ -112,7 +112,7 @@
           <div class="product-card">
             <div class="hit"></div>
             <img src="img/ice_items/creamy_orange.jpg" width="267" height="267" alt="Сливочное с апельчиновым джемом">
-            <p class="item-price">310Р/<span class="weight">кг</span></p>
+            <p class="item-price">310Р<span class="weight">/кг</span></p>
             <p class="underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           </div>
         </li>
@@ -120,7 +120,7 @@
           <div class="product-card">
             <div class="hit"></div>
             <img src="img/ice_items/creamy_coffee.jpg" width="267" height="267" alt="Сливочно-кофейное">
-            <p class="item-price">380Р/<span class="weight">кг</span></p>
+            <p class="item-price">380Р<span class="weight">/кг</span></p>
             <p class="underline">Сливочно-кофейное с кусочками шоколада</p>
           </div>
         </li>
@@ -128,7 +128,7 @@
           <div class="product-card">
             <div class="hit"></div>
             <img src="img/ice_items/creamy_srrowberry.jpg" width="267" height="267" alt="Сливочно-клубничное">
-            <p class="item-price">355Р/<span class="weight">кг</span></p>
+            <p class="item-price">355Р<span class="weight">/кг</span></p>
             <p class="underline">Сливочно-клубничное с присыпкой из белого шоколада</p>
           </div>
         </li>
@@ -136,7 +136,7 @@
           <div class="product-card">
             <div class="hit"></div>
             <img src="img/ice_items/creamy_caramel.jpg" width="267" height="267" alt="Сливочное крем-брюле">
-            <p class="item-price">415Р/<span class="weight">кг</span></p>
+            <p class="item-price">415Р<span class="weight">/кг</span></p>
             <p class="underline">Сливочное крем-брюле с карамельной подливкой</p>
           </div>
         </li>
@@ -160,15 +160,19 @@
       </section>
       <div class="news_and_dispatch">
         <section class="blog-news">
-          <p>Новое в нашем блоге</p>
-          <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+          <div class="blog-news-position">
+            <p>Новое в нашем блоге</p>
+            <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+          </div>
         </section>
         <section class="dispatch">
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-          <form action="#" method="post">
-            <input type="email" name="email" placeholder="Электронная почта">
-            <button class="button" type="submit">Отправить</button>
+          <div class="dispatch-content">
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+            <form class="dispatch-form" action="#" method="post">
+              <input type="email" name="email" placeholder="Электронная почта">
+             <button class="button dispatch-button" type="submit">Отправить</button>
           </form>
+          </div>
         </section>
       </div>
       <section class="map">
@@ -181,10 +185,10 @@
           <p>Для заказов по телефону:</p>
           <p><strong>8 812 450-25-25</strong> <br>
             (с 10 до 20 ежедневно)</p>
-          <a class="btn" href="#">Форма обратной связи</a>
-            <section class="modal-feedback">                            <!--Всплывающая форма-->
+          <a class="btn map-btn" href="#">Форма обратной связи</a>
+            <section class="modal-feedback visually-hidden">                            <!--Всплывающая форма-->
               <h3>Мы обязательно вам ответим!</h3>
-              <form class="visually-hidden" action="#" method="post">
+              <form action="#" method="post">
                 <p class="user-name">
                   <label for="your_name" class="visually-hidden">Как вас зовут?</label>
                   <input type="text" id="your_name" name="your_name" placeholder="Как вас зовут?">
