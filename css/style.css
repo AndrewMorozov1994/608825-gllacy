@@ -23,6 +23,17 @@ body{
 a{
   color:#ffffff;
 }
+.btn-hover{
+  display: inline-block;
+  padding:8px 14px;
+  border-radius: 18px;
+}
+.btn-hover:hover{
+  background-color: #f7f6f3;
+  color: #333333;
+  text-decoration: none;
+
+}
 /*для всех ссылок С ГРАДИЕНТОМ*/  /*не забыть расставить класс для нужных элементов в html*/
 .btn{
   text-decoration: none;
@@ -73,16 +84,21 @@ a{
 }
 .main-navigation{
   padding-top: 9px;
-  padding-left: 27px;
+  padding-left: 0px;
   display: flex;
   justify-content: space-between;
 }
+.main-logo{
+  padding-left:27px ;
+}
 .site-navigation li{
-  padding-right: 28px;
+  display: inline-block;
+
+
 }
 .site-navigation{
   margin-top: 12px;
-  padding-left:23px;
+  padding-left:9px;
   list-style: none;
   display: flex;
 }
@@ -143,7 +159,8 @@ a{
   background-repeat:no-repeat;
   background-image: url(../img/svg-gllacy/entrancewhite.svg.png);
 }
-.btn-login:hover::before{
+.btn-login:hover::before,
+.btn-login:focus::before{
   background-image: url(../img/svg-gllacy/entrance.svg);
 }
 
@@ -159,11 +176,14 @@ a{
   vertical-align: middle;
 }
 .btn-control:hover,
-.control-search a:hover{
+.control-search a:hover,
+.btn-control:focus,
+.control-search a:focus {
   background: #f8f7f4;
   color: #323232;
 }
-.control-search a:hover{
+.control-search a:hover,
+.control-search a:focus {
   background-position: center center;
   background-image: url("../img/svg-gllacy/loupe_black.svg");
   background-repeat:no-repeat;
@@ -197,7 +217,8 @@ a{
   background-image: url(../img/svg-gllacy/basket.svg);
   background-repeat:no-repeat;
 }
-.btn-crate:hover::before{
+.btn-crate:hover::before,
+.btn-crate:focus::before{
   background-image: url(../img/svg-gllacy/basket-red.svg);
 
 }
@@ -748,17 +769,37 @@ a{
   border-radius: 50%;
   background-color: white;
 }
+
 .social-tw{
   background:  no-repeat url("../img/svg-gllacy/twitter.svg") center ;
+  opacity: 0.8;
 }
+.social-tw:hover{
+  opacity: 1;
+}
+
 .social-in{
    background: url("../img/svg-gllacy/instagram.svg") no-repeat center;
+  opacity: 0.8;
 }
+.social-in:hover{
+  opacity: 1;
+}
+
 .social-fb{
   background: url("../img/svg-gllacy/fb.svg") no-repeat center;
+  opacity: 0.8;
 }
+.social-fb:hover{
+  opacity: 1;
+}
+
 .social-vk{
   background: url("../img/svg-gllacy/vk.svg") no-repeat center;
+  opacity: 0.8;
+}
+.social-vk:hover{
+  opacity:1;
 }
 /*Список ссылок в футере*/
 
