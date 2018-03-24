@@ -205,16 +205,13 @@ a{
   margin: 0 auto;
   margin-top: -133px;
   width: 1200px;
-  background-color: #94aa9d;
 }
 /*Все для слайдера*/
 .site-wrapper {
   min-width: 940px;
-  background-color: #849d8f;
   background-image: url("../img/slider/ice_bg1.png");
   background-repeat: no-repeat;
   background-position: top center;
-  padding-bottom: 104px;
 
 
 
@@ -730,7 +727,7 @@ a{
 /*Центровка футера*/
 .page-footer{
   margin: 0 auto;
-  margin-top: -87px;
+  margin-top: 20px;
   width: 1200px;
   background-color: transparent;
   display: flex;
