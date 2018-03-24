@@ -68,6 +68,8 @@ a{
   width: 1200px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 5;
 }
 .main-navigation{
   padding-top: 9px;
@@ -131,7 +133,19 @@ a{
 .control-login{
   position: relative;
 }
-
+.btn-login::before{
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 20px;
+  top: 5px;
+  left: 16px;
+  background-repeat:no-repeat;
+  background-image: url(../img/svg-gllacy/entrancewhite.svg.png);
+}
+.btn-login:hover::before{
+  background-image: url(../img/svg-gllacy/entrance.svg);
+}
 
 
 
@@ -144,7 +158,19 @@ a{
   border-radius: 17px;
   vertical-align: middle;
 }
+.btn-control:hover,
+.control-search a:hover{
+  background: #f8f7f4;
+  color: #323232;
+}
+.control-search a:hover{
+  background-position: center center;
+  background-image: url("../img/svg-gllacy/loupe_black.svg");
+  background-repeat:no-repeat;
+}
+
 .btn-login{
+  display: inline-block;
  width: 92px;
 }
 
@@ -152,9 +178,28 @@ a{
   width: 116px;
 
 }
+
+
 .btn-login span,
 .btn-crate span{
   margin-left: 45px;
+}
+.crate{
+  position: relative;
+}
+.btn-crate::before{
+  position: absolute;
+  content: "";
+  width:21px;
+  height: 20px;
+  top: 5px;
+  left: 15px;
+  background-image: url(../img/svg-gllacy/basket.svg);
+  background-repeat:no-repeat;
+}
+.btn-crate:hover::before{
+  background-image: url(../img/svg-gllacy/basket-red.svg);
+
 }
 .main-container{
   margin: 0 auto;
@@ -285,7 +330,8 @@ a{
   cursor: pointer;
 }
 
-#product-1:checked ~ .site-wrapper {
+#product-1:checked ~ .site-wrapper,
+#product-1:checked ~ .body{
   background-color: #849d8f;
   background-image: url("../img/slider/ice_bg1.png");
 }
@@ -337,6 +383,7 @@ a{
 .sale-raze,
 .sale-chocolate{
   border-radius: 15px;
+  margin-bottom: auto;
 
 }
 .sale-chocolate p,
@@ -352,7 +399,7 @@ a{
   float:right;
   padding: 11px 23px;
   padding-bottom: 12px;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   margin-right: 20px;
   border-radius: 22px;
 
@@ -367,7 +414,7 @@ a{
 
 /*Блок с малиной*/
 .sale-raze{
-
+  background-color: #630e1e;
   background-image: url("../img/raspberries_bg.jpg");
   background-repeat:repeat-y;
   width: 560px;
@@ -376,6 +423,7 @@ a{
 
 /*Блок м шоколадом*/
 .sale-chocolate{
+  background-color: #3d2317;
   background-image: url("../img/chocolate_bg.jpg");
   background-repeat:repeat-y;
   width: 560px;
@@ -387,7 +435,7 @@ a{
 .catalog-list{
   width: 1146px;
   margin: 0 auto;
-  margin-top: 38px;
+  margin-top: 40px;
   padding: 0;
   list-style: none;
   line-height: 22px;
@@ -719,7 +767,9 @@ a{
 /*Список ссылок в футере*/
 
 .info{
-
+  margin-left: 24px;
+  margin-top: 17px;
+  margin-bottom: 20px;
   padding: 0;
   list-style: none;
   font-size: 13px;
@@ -731,35 +781,66 @@ a{
 }
 .info li{
 
+  margin-left: 35px ;
+
   width:140px;
 }
+.info li:nth-child(3){
+  margin-left: 1px;
+
+}
 .info li:nth-child(2){
+
   order: 3;
 }
 .info li:nth-child(4){
+  margin-left: 1px;
   order:4;
   width: 200px;
 }
 .info a{
   text-decoration: underline;
+
 }
 .for_suppliers{
+  position: relative;
   font-weight: 700;
+}
+.for_suppliers::before{
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -22px;
+  display: block;
+  width: 15px;
+  height: 13px;
+  background-image: url("../img/svg-gllacy/heart.svg");
+  background-repeat: no-repeat;
+
+
 }
 .modal-feedback h3{
   margin:0;
 }
 /*Копирайт*/
 .copyright{
+  position: relative;
+  padding-right:24px;
 
+}
+.footer-copyright{
+  margin-top:36px;
+  margin-bottom: 12px;
   font-size: 12px;
   color: white;
 }
-.copyright a{
+.footer-copyright a{
+
   color: white;
 
 }
 .html-logo{
+  position: absolute;
 
 }
 
@@ -833,6 +914,7 @@ a{
 .catalog-items{
 }
 .items{
+
   margin: 0 auto;
   padding: 0;
   list-style: none;
@@ -842,6 +924,7 @@ a{
   justify-content: space-between;
 }
 .items li{
+  position: relative;
   width: 267px;
   word-wrap: break-word;
 }
