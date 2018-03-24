@@ -465,6 +465,11 @@ a{
   width: 267px;
   word-wrap: break-word;
 }
+.catalog-list li:hover{
+  border-radius: 5px;
+  background-color: rgba(248, 247, 244,0.2);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
 .item-price{
   margin-bottom: 0;
   font-size: 45px;
@@ -573,7 +578,10 @@ a{
 .making p{
   padding-left: 76px;
 }
+т0- х         - т0
 
+
+g
 .making li:nth-child(2){
   order: 3;
 }
@@ -985,3 +993,4 @@ a{
 .page-number a{
   text-decoration: none;
 }
+
