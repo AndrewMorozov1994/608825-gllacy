@@ -15,7 +15,7 @@ body{
   font-size: 16px;
   font-weight: 500;
   line-height: 33.52px;
-  background-color: #282828;
+  background-color: #849d8f;
   color: #ffffff;
 }
 
@@ -327,8 +327,7 @@ a{
   cursor: pointer;
 }
 
-#product-1:checked ~ .site-wrapper,
-#product-1:checked ~ .body{
+#product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slider/ice_bg1.png");
 }
