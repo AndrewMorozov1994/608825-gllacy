@@ -8,49 +8,53 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   </head>
   <body>
-  <header class="main-header">
+  <header class="main-header catalog-header">
     <nav class="main-navigation">
-      <a class="main-logo">
+      <a class="main-logo catalog-main-logo">
         <img src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип Глэйси">
       </a>
-      <ul class="site-navigation">
+      <ul class="site-navigation catalog-site-navigation">
         <li>
-          <a href="http://catalog.html">Каталог</a>
-          <ul class="visually-hidden">    <!--Всплывающий список-->
-            <li>Новинки</li>
-            <li>Сливочное</li>
-            <li>Щербеты</li>
-            <li>Фруктовый лед</li>
-            <li>Мелорин</li>
-          </ul>                           <!--//-->
+          <a class="btn-hover" href="http://catalog.html"><span class="a_color">Каталог</span></a>
+          <ul class=" sub-menu">    <!--Всплывающий список-->
+            <li><a href="#"><span class="sub-menu-news">Новинки</span></a></li>
+            <li><a href="#">Сливочное</a></li>
+            <li><a href="#">Щербеты</a></li>
+            <li><a href="#">Фруктовый лед</a></li>
+            <li><a href="#">Мелорин</a></li>
+          </ul>                          <!--//-->
         </li>
-        <li><a href="http://payment.html">Доставка и оплата</a></li>
-        <li><a href="http://aboutCompany.html">О компании</a></li>
+        <li><a class="btn-hover" href="#"><span class="a_color">Доставка и оплата</span></a></li>
+        <li><a class="btn-hover" href="#"><span class="a_color">О Компании</span></a></li>
       </ul>
     </nav>
     <div class="control-wrapper">
       <section class="control">
         <div class="control-search">
-         <a href="#"><span>Поиск</span></a>
-         <section class="control-search-form visually-hidden">
-           <form action="#" method="post">
+          <a  href="#"><span class="visually-hidden">Поиск</span></a>
+          <section class="control-search-form">
+            <form action="#" method="post">
               <input type="search" placeholder="Что ищем?">
-              <button type="submit">Отправить</button>
+              <button class="visually-hidden" type="submit">Отправить</button>
             </form>
          </section>    <!--Всплывающий элемент, форма поиска--> <!--//-->
        </div>
         <div class="control-login">
-          <form class="visually-hidden" action="#" method="post">                                         <!--Всплывающий элемент-->
+          <a class="btn-login btn-control " href="#"><span>Вход</span></a>
+          <form action="#" class="control-login-form" method="post">                                         <!--Всплывающий элемент-->
             <input type="email" name="email" placeholder="Электронная почта">
             <input type="password" name="password" placeholder="Пароль">
-            <a href="#">Забыли пароль?</a>
-             <a href="#">Новая регистрация</a>
-            <button class="button" type="submit">Вход</button>                                   <!--Правильно ли оформлена кнопка для отправки формы?-->
+            <div class="control-login-wrapper">
+              <ul>
+                <li><a href="#"><span>Забыли пароль?</span></a></li>
+                <li><a href="#"><span>Новая регистрация</span></a></li>
+              </ul>
+              <button class="button control-login-button" type="submit">Войти</button>
+            </div>
           </form>
-          <a class="btn" href="#">Вход</a>
        </div>
        <div class="crate">
-         <a href="#">2 товара</a>
+         <a class="btn-crate btn-control " href="#"><span>2 товара</span></a>
          <section class="crate-full visually-hidden">
             <table>
               <tr>
@@ -90,44 +94,46 @@
   </header>
     <main class="main-container">
       <div class="pages">
-        <ul>
-            <li><a href="http://index.html">Главная</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li class="active-page"><a href="#">Сливочное</a></li>
+        <ul class="active-pages">
+          <li><a href="http://index.html"><span>Главная</span></a></li>
+          <li><a href="#"><span>Каталог</span></a></li>
+          <li class="active-pages-page"><a href="#">Сливочное</a></li>
         </ul>
       </div>
       <h2 class="section-title">Сливочное мороженое</h2>
       <fieldset class="filters">
         <legend class="visually-hidden">Элементы фильтра</legend>
         <form action="#" class="sorting" method="post">
-          <p>Сортировка:</p>
-          <select class="sorting-select" name="catalog-select-sorting">
-                <option value="popular">по популярности</option>
-                <option value="cheap">сначала недорогие</option>
-                <option value="rich">сначала дорогие</option>
-                <option value="calories">по жирности</option>
-          </select>
+          <div class="sorting-select">
+            <p>Сортировка:</p>
+              <select  name="catalog-select-sorting">
+                  <option value="popular">по популярности</option>
+                  <option value="cheap">сначала недорогие</option>
+                  <option value="rich">сначала дорогие</option>
+                  <option value="calories">по жирности</option>
+              </select>
+          </div>
           <div class="catalog-price-sorting">
-          <label for="range-sorting">Цена: 100 руб. – 500 руб.</label>
-            <div class="range">
-              <input type="range" id="range-sorting" min="100" max="500" step="1">          <!--2 ползунка реализуются только с помощью скрипта?-->
+           <label for="range-sorting">Цена: 100 руб. – 500 руб.</label>
+              <div class="range">
+               <input type="range" id="range-sorting" min="100" max="500" step="1">          <!--2 ползунка реализуются только с помощью скрипта?-->
+             </div>
             </div>
-          </div>
-          <div class="radiobutton-sorting">
-            <p>Жирность:</p>
-              <label>
-                <input type="radio" name="radiobutton" value="0">0%
-              </label>
-              <label>
-                <input type="radio" name="radiobutton" value="10" checked>до 10%
-              </label>
-              <label>
-                <input type="radio" name="radiobutton" value="30">до 30%
-              </label>
-              <label>
-                <input type="radio" name="radiobutton" value=">30">выше 30%
-              </label>
-          </div>
+           <div class="radiobutton-sorting">
+              <p>Жирность:</p>
+                <label>
+                  <input type="radio" name="radiobutton" value="0">0%
+               </label>
+               <label>
+                 <input type="radio" name="radiobutton" value="10" checked>до 10%
+               </label>
+               <label>
+                 <input type="radio" name="radiobutton" value="30">до 30%
+               </label>
+               <label>
+                 <input type="radio" name="radiobutton" value=">30">выше 30%
+                </label>
+            </div>
           <div class="checkbox-sorting">
             <p>Наполнители:</p>
             <label>
@@ -270,23 +276,23 @@
       </div>
       <ul class="info">
         <li>
-          <a class="for_suppliers" href="#">Для поставщиков</a>
+          <a class="for_suppliers" href="#"><span>Для поставщиков</span></a>
         </li>
         <li>
-          <a href="#">О производстве</a>
+          <a href="#"><span>О производстве</span></a>
         </li>
         <li>
-          <a href="#">Наши документы</a>
+          <a href="#"><span>Наши документы</span></a>
         </li>
         <li>
-          <a href="#">Экологические стандарты</a>
+          <a href="#"><span>Экологические стандарты</span></a>
         </li>
       </ul>
-      <div>
+      <div class="copyright">
         <div class="html-logo"><a href="#"></a>
           <img src="img/svg-gllacy/logo-htmlacademy.svg" width="108" height="39" alt="">
         </div>
-        <div class="copyright">Сделано в <a href="#">HTML Academy</a> © 2017</div>
+        <div class="footer-copyright">Сделано в <a href="#"><span>HTML Academy</span></a> © 2017</div>
       </div>
     </footer>
   </body>
