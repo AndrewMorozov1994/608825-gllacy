@@ -21,18 +21,28 @@ body{
 
 /*Цвет для всех ссылок*/
 a{
-  color:#ffffff;
+  color: white;
 }
 .btn-hover{
-  display: inline-block;
   padding:8px 14px;
   border-radius: 18px;
+  margin-top:5px;
+  color: rgba(255,255,255,0.2);
+  display: inline-block;
+}
+.btn-hover > span{
+ color:white;
 }
 .btn-hover:hover{
   background-color: #f7f6f3;
-  color: #333333;
   text-decoration: none;
-
+}
+.btn-hover:hover > span{
+  color: #333333;
+}
+.btn-hover:active{
+  background-color: rgba(248, 247, 244, 0.988);;
+  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.5);
 }
 /*для всех ссылок С ГРАДИЕНТОМ*/  /*не забыть расставить класс для нужных элементов в html*/
 .btn{
@@ -83,18 +93,18 @@ a{
   z-index: 5;
 }
 .main-navigation{
+  position: relative;
   padding-top: 9px;
   padding-left: 0px;
   display: flex;
   justify-content: space-between;
 }
 .main-logo{
+  padding-top: 2px;
   padding-left:27px ;
 }
 .site-navigation li{
-  display: inline-block;
-
-
+  margin-bottom: auto;
 }
 .site-navigation{
   margin-top: 12px;
@@ -103,7 +113,63 @@ a{
   display: flex;
 }
 .site-navigation a{
+  color: rgba(255,255,255,0.2);
   line-height: 18px;
+
+}
+/*Всплывающее меню*/
+
+
+
+
+.sub-menu{
+  padding:0;
+  min-width: 100px;
+  list-style: none;
+  text-align: start;
+  display: none;
+  position: absolute;
+  top: 62px;
+  left: 185px;
+  border-radius: 5px;
+  background-color: rgb(248, 247, 244);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
+}
+
+.sub-menu li:first-child > a{
+  border-bottom: 1px solid rgba(50,50,50, 0.2);
+  padding-bottom: 4px;
+}
+.sub-menu li:nth-child(2) > a{
+  padding-top: 4px;
+}
+
+
+.sub-menu a{
+  padding: 0;
+  margin: 0;
+  margin-right: 20px;
+  margin-left: 20px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  text-decoration: none;
+  color: #323232;
+}
+.sub-menu-news{
+  font-weight: 700;
+}
+
+.site-navigation li:first-child:hover > .sub-menu{
+  display: block;
+}
+.sub-menu li:hover{
+  background-color: #fbded7;
+}
+.sub-menu li:active{
+  background-color: #f6b5a5;
 }
 
 .control, .mode{
@@ -126,7 +192,7 @@ a{
   position: relative;
 }
 .control-wrapper{
-  margin:4px;
+  margin:7px;
   margin-right: 18px;
 }
 
@@ -149,6 +215,86 @@ a{
 .control-login{
   position: relative;
 }
+/*Форма входа*/
+.control-login-form{
+  display: none;
+  position: absolute;
+  top: 36px;
+  left: -187px;
+  width: 280px;
+  background-color: #f8f7f4;
+  padding: 20px;
+  padding-bottom: 25px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.control-login-form input[type="email"],
+.control-login-form input[type="password"]{
+  width: 240px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border:1px solid rgba(178,178,178,0.52);
+  outline: none;
+}
+.control-login-form input[type="email"]:hover,
+.control-login-form input[type="password"]:hover{
+  box-shadow: inset 0 0 0 1px  rgba(154,154,154,0.52);
+}
+.control-login-form input[type="email"]:focus,
+.control-login-form input[type="password"]:focus{
+  box-shadow: inset 0 0 0 1px  rgba(46,136,228,0.52);
+}
+
+.control-login-wrapper{
+  margin-top: 0px;
+  display: flex;
+  width: 240px;
+  justify-content: space-between;
+}
+.control-login-wrapper ul{
+  order:2;
+  font-weight: 400;
+  font-size: 13px;
+  list-style: none;
+  width: 120px;
+  color: #323232;
+  padding-left: 0px;
+  margin-top: 2px;
+}
+
+.control-login-wrapper a{
+  line-height: 20px;
+  display: block;
+  color: rgba(50,50,50,0.3);
+}
+.control-login-wrapper span{
+  color: #323232;
+}
+.control-login-wrapper a:hover,
+.control-login-wrapper a:active{
+  color: rgba(232,77,55,0.3);
+}
+.control-login-wrapper span:hover,
+.control-login-wrapper span:active{
+  color: #e84d37;
+}
+
+.control-login-button{
+  width: 102px;
+  padding: 15px 0;
+  margin: auto 0;
+  margin-top: 0px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.control-login:hover > .control-login-form{
+  display: block;
+}
+
+
 .btn-login::before{
   position: absolute;
   content: "";
@@ -179,7 +325,7 @@ a{
 .control-search a:hover,
 .btn-control:focus,
 .control-search a:focus {
-  background: #f8f7f4;
+  background: #f7f6f3;
   color: #323232;
 }
 .control-search a:hover,
@@ -188,6 +334,39 @@ a{
   background-image: url("../img/svg-gllacy/loupe_black.svg");
   background-repeat:no-repeat;
 }
+.control-search{
+  position: relative;
+}
+/*Инпут поиска*/
+.control-search-form{
+  padding: 20px 15px;
+  display: none;
+  position: absolute;
+  width: 342px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+
+}
+input[type="search"]{
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 5px;
+  border:1px solid rgba(178,178,178,0.52);
+  box-sizing: border-box;
+  outline: none;
+}
+input[type="search"]:hover{
+  box-shadow: inset 0 0 0 1px  rgba(154,154,154,0.52);
+}
+input[type="search"]:focus{
+  box-shadow: inset 0 0 0 1px  rgba(46,136,228,0.52);
+}
+.control-search:hover > .control-search-form{
+  display: block;
+  left: -342px;
+}
+
+
 
 .btn-login{
   display: inline-block;
@@ -224,7 +403,7 @@ a{
 }
 .main-container{
   margin: 0 auto;
-  margin-top: -133px;
+  margin-top: -137px;
   width: 1200px;
 }
 /*Все для слайдера*/
@@ -347,6 +526,9 @@ a{
   border-radius: 50%;
   cursor: pointer;
 }
+.slider-controls label:hover{
+  background-color: rgba(255,255,255,0.4);
+}
 
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
@@ -450,19 +632,19 @@ a{
 
 /*Общий блок для хит-мороженок*/
 .catalog-list{
-  width: 1146px;
+  width: 1172px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 33px;
   padding: 0;
   list-style: none;
   line-height: 22px;
   display:flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .catalog-list li{
   position: relative;
-  width: 267px;
+  width: 286px;
   word-wrap: break-word;
 }
 .catalog-list li:hover{
@@ -470,12 +652,18 @@ a{
   background-color: rgba(248, 247, 244,0.2);
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
+.product-card{
+  padding-top: 7px;
+  padding-left: 10px;
+  padding-right: 12px;
+}
 .item-price{
   margin-bottom: 0;
   font-size: 45px;
   font-weight: 700;
   position: absolute;
-  top: 175px;
+  top: 182px;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 .weight{
   font-size: 30px;
@@ -496,10 +684,18 @@ a{
   background-image: url("../img/svg-gllacy/hit.svg");
 }
 /*Подчеркивание для названия мороженок */
+.a_color{
+  color: white;
+}
 .underline{
+  color: rgba(255,255,255,0.2);
+  display: block;
   text-decoration: underline;
   text-align: center;
-  margin-top: 5px;
+  margin-top: 8px;
+  padding-left: 2px;
+  padding-top: 0px;
+  padding-bottom: 15px;
 }
 
 /*Все для вафельки*/
@@ -578,10 +774,7 @@ a{
 .making p{
   padding-left: 76px;
 }
-т0- х         - т0
 
-
-g
 .making li:nth-child(2){
   order: 3;
 }
@@ -638,6 +831,23 @@ g
   font-weight: 700;
 }
 
+.blog-news a{
+  color: rgba(50,50,50,0.3);
+}
+.blog-news a > span{
+  color:#323232;
+}
+
+.blog-news a:hover,
+.blog-news a:active{
+  color: rgba(232,77,55,0.3);
+}
+.blog-news a:hover > span,
+.blog-news a:active > span{
+  color: #e84d37;
+}
+
+
 /*Рассылка*/
 .dispatch{
   line-height: 22px;
@@ -676,13 +886,27 @@ g
   vertical-align: middle;
 
 }
+
 .dispatch-form input[type="email"]{
+  font: inherit;
+  font-weight: 700;
+  color: #323232;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline: none;
   box-sizing: border-box;
   width: 368px;
   min-height: 44px;
   margin-left:20px;
   border: 1px solid rgba(178,178,178,0.52);
   border-radius: 5px;
+}
+
+.dispatch-form input[type="email"]:hover{
+  box-shadow: inset 0 0 0 1px  rgba(154,154,154,0.52);
+}
+.dispatch-form input[type="email"]:focus{
+  box-shadow: inset 0 0 0 1px  rgba(46,136,228,0.52);
 }
 
 
@@ -739,8 +963,8 @@ g
   font: inherit;
   font-size: 18px;
   font-weight: 700;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
   padding-bottom: 13px;
   display: block;
   width: 250px;
@@ -755,7 +979,7 @@ g
 /*Центровка футера*/
 .page-footer{
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 17px;
   width: 1200px;
   background-color: transparent;
   display: flex;
@@ -767,7 +991,7 @@ g
 }
 .social{
   box-sizing: border-box;
-  font-size:0px;
+  font-size:0;
   display: inline-block;
   width: 37px;
   height: 37px;
@@ -845,8 +1069,22 @@ g
 }
 .info a{
   text-decoration: underline;
-
+  color: rgba(255,255,255,0.3);
 }
+.info a > span{
+  color: white;
+}
+.info a:hover,
+.info a:active{
+  color: rgba(255,188,158,0.3);
+}
+
+.info a:hover > span,
+.info a:active > span{
+  color: #ffbc9e;
+}
+
+
 .for_suppliers{
   position: relative;
   font-weight: 700;
@@ -861,9 +1099,9 @@ g
   height: 13px;
   background-image: url("../img/svg-gllacy/heart.svg");
   background-repeat: no-repeat;
-
-
 }
+
+
 .modal-feedback h3{
   margin:0;
 }
@@ -874,16 +1112,27 @@ g
 
 }
 .footer-copyright{
+  font-weight: 400;
   margin-top:36px;
   margin-bottom: 12px;
   font-size: 12px;
   color: white;
 }
 .footer-copyright a{
-
-  color: white;
-
+  color: rgba(255,255,255,0.3);
 }
+.footer-copyright a > span{
+  color: white ;
+}
+.footer-copyright a:hover,
+.footer-copyright a:active{
+  color: rgba(255,188,158,0.3);
+}
+.footer-copyright a:hover > span,
+.footer-copyright a:active > span{
+  color: #ffbc9e ;
+}
+
 .html-logo{
   position: absolute;
 
