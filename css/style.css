@@ -21,6 +21,7 @@ body{
 
 /*Цвет для всех ссылок*/
 a{
+  text-decoration: none;
   color: white;
 }
 .btn-hover{
@@ -31,7 +32,7 @@ a{
   display: inline-block;
 }
 .btn-hover > span{
- color:white;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 .btn-hover:hover{
   background-color: #f7f6f3;
@@ -39,6 +40,7 @@ a{
 }
 .btn-hover:hover > span{
   color: #333333;
+  border-bottom: none;
 }
 .btn-hover:active{
   background-color: rgba(248, 247, 244, 0.988);;
@@ -219,7 +221,8 @@ a{
 .control-login-form{
   display: none;
   position: absolute;
-  top: 36px;
+
+  top: 100%;
   left: -187px;
   width: 280px;
   background-color: #f8f7f4;
@@ -268,18 +271,17 @@ a{
 .control-login-wrapper a{
   line-height: 20px;
   display: block;
-  color: rgba(50,50,50,0.3);
+
 }
 .control-login-wrapper span{
   color: #323232;
+  border-bottom: 1px solid rgba(50,50,50,0.3);
 }
-.control-login-wrapper a:hover,
-.control-login-wrapper a:active{
-  color: rgba(232,77,55,0.3);
-}
+
 .control-login-wrapper span:hover,
 .control-login-wrapper span:active{
   color: #e84d37;
+  border-bottom: 1px solid rgba(232,77,55,0.3);;
 }
 
 .control-login-button{
@@ -687,11 +689,10 @@ input[type="search"]:focus{
 /*Подчеркивание для названия мороженок */
 .a_color{
   color: white;
+  border-bottom:1px solid rgba(255,255,255,0.2);
 }
 .underline{
-  color: rgba(255,255,255,0.2);
   display: block;
-  text-decoration: underline;
   text-align: center;
   margin-top: 8px;
   padding-left: 2px;
@@ -832,20 +833,15 @@ input[type="search"]:focus{
   font-weight: 700;
 }
 
-.blog-news a{
-  color: rgba(50,50,50,0.3);
-}
 .blog-news a > span{
   color:#323232;
+  border-bottom: 2px solid rgba(50,50,50,1);
 }
 
-.blog-news a:hover,
-.blog-news a:active{
-  color: rgba(232,77,55,0.3);
-}
 .blog-news a:hover > span,
 .blog-news a:active > span{
   color: #e84d37;
+  border-bottom: 2px solid rgba(232,77,55,0.3);
 }
 
 
@@ -977,6 +973,108 @@ input[type="search"]:focus{
 
 }
 
+
+/*Модалка*/
+.modal{
+  position: fixed;
+  width: 478px;
+  background-color: #f8f7f4;
+  top: 50%;
+  left: 50%;
+  margin-left: -239px;
+  margin-top: -150px;
+  padding: 25px;
+  padding-top: 15px;
+  border-radius: 10px;
+  z-index: 100;
+  box-sizing: border-box;
+}
+.modal h3{
+  font: inherit;
+  font-size: 24px;
+  color: #323232;
+  margin:0;
+  margin-bottom: 20px;
+}
+
+.modal-feedback p{
+  margin: 0;
+}
+.modal input[type="text"],
+.modal input[type="email"]{
+  font-size: 16px;
+  font-family: "Roboto", Arial, sans-serif;
+  box-sizing: border-box;
+  width: 268px;
+  padding: 8px 15px;
+  margin: 0;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border:1px solid rgba(178,178,178,0.52);
+  outline: none;
+}
+.modal textarea{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  width: 100%;
+  min-height: 170px;
+  box-sizing: border-box;
+  padding: 8px 15px;
+  outline: none;
+  border:1px solid rgba(178,178,178,0.52);
+}
+
+.modal input[type="text"]:hover,
+.modal input[type="email"]:hover,
+.modal textarea:hover{
+  box-shadow: inset 0 0 0 1px  rgba(154,154,154,0.52);
+}
+.modal input[type="text"]:focus,
+.modal input[type="email"]:focus,
+.modal textarea:focus{
+  box-shadow: inset 0 0 0 1px  rgba(46,136,228,0.52);
+}
+
+.modal-close{
+
+  border: none;
+  font-size: 0;
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal-feedback button[type="submit"]{
+  float: right;
+  margin-top: 10px;
+  padding: 5px 25px;
+}
+.modal-feedback button[type="button"]::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 17px;
+  background-image: url(../img/svg-gllacy/cross-big.svg);
+  background-repeat:no-repeat;
+  top: 15px;
+  right: 15px;
+
+
+}
+.modal-overlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.3);
+  z-index:90;
+}
+
+
+
 /*Центровка футера*/
 .page-footer{
   margin: 0 auto;
@@ -1068,21 +1166,16 @@ input[type="search"]:focus{
   order:4;
   width: 200px;
 }
-.info a{
-  text-decoration: underline;
-  color: rgba(255,255,255,0.3);
-}
+
 .info a > span{
   color: white;
-}
-.info a:hover,
-.info a:active{
-  color: rgba(255,188,158,0.3);
+  border-bottom:1px solid rgba(255,255,255,0.3);
 }
 
 .info a:hover > span,
 .info a:active > span{
   color: #ffbc9e;
+  border-bottom: 1px solid rgba(255,188,158,0.3);
 }
 
 
@@ -1098,14 +1191,16 @@ input[type="search"]:focus{
   display: block;
   width: 15px;
   height: 13px;
-  background-image: url("../img/svg-gllacy/heart.svg");
+  background-image:  url("../img/svg-gllacy/heart.svg");
   background-repeat: no-repeat;
 }
 
-
-.modal-feedback h3{
-  margin:0;
+.for_suppliers:hover::before{
+  background-image: url("../img/svg-gllacy/heart-hover.svg"); ;
 }
+
+
+
 /*Копирайт*/
 .copyright{
   position: relative;
@@ -1119,19 +1214,16 @@ input[type="search"]:focus{
   font-size: 12px;
   color: white;
 }
-.footer-copyright a{
-  color: rgba(255,255,255,0.3);
-}
+
 .footer-copyright a > span{
-  color: white ;
+  color: white;
+  border-bottom: 1px solid rgba(255,255,255,0.3) ;
 }
-.footer-copyright a:hover,
-.footer-copyright a:active{
-  color: rgba(255,188,158,0.3);
-}
+
 .footer-copyright a:hover > span,
 .footer-copyright a:active > span{
   color: #ffbc9e ;
+  border-bottom: 1px solid rgba(255,188,158,0.3);
 }
 
 .html-logo{

@@ -194,28 +194,31 @@
           <p><strong>8 812 450-25-25</strong> <br>
             (с 10 до 20 ежедневно)</p>
           <a class="btn map-btn" href="#">Форма обратной связи</a>
-            <section class="modal-feedback visually-hidden">                            <!--Всплывающая форма-->
-              <h3>Мы обязательно вам ответим!</h3>
-              <form action="#" method="post">
-                <p class="user-name">
-                  <label for="your_name" class="visually-hidden">Как вас зовут?</label>
-                  <input type="text" id="your_name" name="your_name" placeholder="Как вас зовут?">
-                </p>
-                <p class="user-email">
-                  <label for="email_form" class="visually-hidden">Ваша почта для ответа</label>
-                  <input type="email" id="email_form" placeholder="Ваша почта для ответа?">
-                </p>
-                <p class="user-text">
-                  <label for="user-comment" class="visually-hidden">Напишите что нибудь</label>
-                  <textarea name="comment" id="user-comment" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
-                </p>
-                <button class="button" type="submit">Отправить</button>
-                <button class="modal-close" type="button">Закрыть</button>
-              </form>
-            </section>                                                          <!--//-->
+                                                      <!--//-->
         </div>
       </section>
-
+      <div class="modal-wrapper visually-hidden">
+        <section class="modal "><!--Всплывающая форма-->
+          <h3>Мы обязательно вам ответим!</h3>
+          <form class="modal-feedback" action="#" method="post">
+           <p class="user-name">
+              <label for="your_name" class="visually-hidden">Как вас зовут?</label>
+             <input type="text" id="your_name" name="your_name" placeholder="Как вас зовут?">
+            </p>
+            <p class="user-email">
+              <label for="email_form" class="visually-hidden">Ваша почта для ответа</label>
+             <input type="email" id="email_form" placeholder="Ваша почта для ответа?">
+           </p>
+           <p class="user-text">
+             <label for="user-comment" class="visually-hidden">Напишите что нибудь</label>
+              <textarea name="comment" id="user-comment" cols="" rows="" placeholder="Напишите что-нибудь..."></textarea>
+            </p>
+           <button class="button" type="submit">Отправить</button>
+           <button class="modal-close" type="button">Закрыть</button>
+         </form>
+        </section>
+       <div class="modal-overlay"></div>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="share">
