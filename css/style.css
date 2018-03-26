@@ -89,7 +89,9 @@ a{
   margin: 0 auto;
   background-color: transparent;
   width: 1200px;
+
   display: flex;
+
   justify-content: space-between;
   position: relative;
   z-index: 5;
@@ -707,7 +709,9 @@ input[type="search"]:focus{
 .seo{
   margin: 0 auto;
   margin-top: 23px;
-  background: no-repeat url("../img/waffle_bg.jpg");
+
+  background-image: url("../img/waffle_bg.jpg");
+  background-repeat:repeat-y;
   color: #323232;
   line-height: 22px;
   font-weight: 400;
@@ -735,6 +739,7 @@ input[type="search"]:focus{
 .making li{
   width: 560px;
   position: relative;
+
 
 }
 .making li:nth-child(1):before{
@@ -912,11 +917,15 @@ input[type="search"]:focus{
 
 /*Блок с адресом на карте*/
 .map{
+
   position: relative;
   margin-top: 40px;
   height: 430px;
   overflow: hidden;
 
+}
+.map iframe{
+  width: 100vw;
 }
 
 .adress{
@@ -978,6 +987,9 @@ input[type="search"]:focus{
 
 
 /*Модалка*/
+.modal-wrapper{
+  display: none;
+}
 .modal{
   position: fixed;
   width: 478px;
@@ -985,7 +997,7 @@ input[type="search"]:focus{
   top: 50%;
   left: 50%;
   margin-left: -239px;
-  margin-top: -150px;
+  margin-top: -200px;
   padding: 25px;
   padding-top: 15px;
   border-radius: 10px;
@@ -1039,7 +1051,8 @@ input[type="search"]:focus{
 }
 
 .modal-close{
-
+  padding: 0;
+  margin: 0;
   border: none;
   font-size: 0;
   width: 0;
@@ -1074,6 +1087,9 @@ input[type="search"]:focus{
   left: 0;
   background: rgba(0,0,0,0.3);
   z-index:90;
+}
+.modal-show{
+  display: block;
 }
 
 
