@@ -1263,7 +1263,7 @@ input[type="search"]:focus{
 /*Активная страница с переходом*/
 .pages{
 
-  padding-top: 79px;
+  padding-top: 81px;
 }
 .active-pages{
   position: relative;
@@ -1316,7 +1316,17 @@ input[type="search"]:focus{
 }
 
 /*ФОРМЫ*/
-
+.filters{
+  margin-left: 13px;
+  margin-top:8px;
+  border: none;
+}
+.sorting{
+  font: inherit;
+  width: 880px;
+  display: flex;
+  flex-wrap: wrap;
+}
 /*Общее*/
 .sorting p,
 .catalog-price-sorting,
@@ -1327,50 +1337,132 @@ input[type="search"]:focus{
 
 /*Форма селектор*/
 
+
+
 .sorting-select{
-  width: 200px;
-  font-size: 16px;
+  width: 194px;
   line-height: 18px;
-  background-color: rgba(248, 247, 244, 0.2);
   color: white ;
-  margin: auto;
+  margin: 0;
+  margin-top: auto;
+  margin-right: 15px;
  }
+.sorting-select p{
+  margin: 0;
+  margin-left:16px;
+  margin-bottom:6px;
+
+}
+
+.sorting-select select{
+  font-size: 16px;
+  width: 194px;
+  color: white ;
+  padding: 10px;
+  border: none;
+  border-radius: 22px;
+  background-color: rgba(248, 247, 244, 0.2);
+}
 
 /*Форма сортировки по цене*/
-.sorting{
-  width: 880px;
-  display: flex;
-  flex-wrap: wrap;
+
+.catalog-price-sorting{
+  margin-top: auto;
+}
+.catalog-price-sorting p{
+  margin-bottom:7px;
+  margin-left: 15px;
 }
 .range{
-  margin: auto;
-  width: 230px;
+  margin: 0;
+  margin-top: auto;
+  margin-right: 15px;
+  width: 220px;
+  padding: 5px 10px;
+  border-radius: 22px;
+  box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
 /*Форма радиобаттонов*/
 .radiobutton-sorting{
-  width: 430px;
-  margin: auto;
+
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: 2px;
+}
+.radiobutton-sorting p{
+  margin: 0;
+  margin-bottom:9px;
+  margin-left: 15px;
 }
 .radiobutton-sorting label{
 
+  width: 415px;
+  padding: 9px 15px;
   background-color: rgba(255, 255, 255, 0.2);
 }
+.radiobutton-sorting label:nth-child(2){
+  border-radius: 22px 0 0 22px;
+}
+.radiobutton-sorting label:last-child{
+  border-radius: 0 22px 22px 0;
+}
+
+
+
+
+
+
 
 /*Чекбоксы*/
 .checkbox-sorting{
-  width: 705px;
-  margin: auto;
+  width: 700px;
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: 14px;
+
+}
+.checkbox-sorting p{
+  margin: 0;
+  margin-left: 16px;
+  margin-bottom: 9px;
 }
 .checkbox-sorting label{
-
+  padding: 7.5px;
+  padding-left: 25px;
+  padding-right: 15px;
   background-color: rgba(255, 255, 255, 0.2);
 }
+.checkbox-sorting label:nth-child(2){
+  border-radius: 22px 0 0 22px;
+  padding-left: 30px;
+}
+.checkbox-sorting label:nth-child(3){
+  padding-left: 15px;
+}
+.checkbox-sorting label:nth-child(4){
+  padding-left: 17px;
+}
+.checkbox-sorting label:nth-child(5){
+  padding-left: 18px;
+}
+.checkbox-sorting label:last-child{
+  border-radius: 0 22px 22px 0;
+  padding-left: 16px;
+  padding-right: 18px;
+}
+
+
 
 /*Кнопка отправка формы*/
 .sorting-button{
-  margin: auto;
+  margin-bottom: -1px;
+  margin-top: auto;
+  margin-left: 20px;
+  color: white;
+  padding: 7px 28px;
+  border-radius: 22px;
   font-size: 16px;
   border-style: solid;
   border-width: 2px;
