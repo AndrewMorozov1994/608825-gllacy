@@ -1318,7 +1318,7 @@ input[type="search"]:focus{
 /*ФОРМЫ*/
 .filters{
   margin-left: 13px;
-  margin-top:3px;
+  margin-top:2px;
   border: none;
 }
 .sorting{
@@ -1392,25 +1392,38 @@ input[type="search"]:focus{
 
   margin: 0;
   margin-top: auto;
-  margin-bottom: 2px;
+
 }
 .radiobutton-sorting p{
   margin: 0;
   margin-bottom:9px;
   margin-left: 15px;
 }
+
 .radiobutton-sorting label{
   position: relative;
-  width: 415px;
-  padding: 9px 15px;
-  background-color: rgba(255, 255, 255, 0.2);
 }
+
+.radiobutton-sorting div{
+  width: 415px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1.5px;
+  padding-left: 25px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  border-radius: 23px;
+}
+
+
+
 .radiobutton-sorting input[type="radio"] + .radio-indicator{
   position: absolute;
-  width: 23px;
-  height: 23px;
-  top: 7px;
-  left: 12px;
+  width: 22px;
+  height: 22px;
+  top: 6px;
+  left: -11px;
   box-sizing: border-box;
   background-image: url(../img/svg-gllacy/radio-off.svg);
   background-repeat:no-repeat;
@@ -1429,16 +1442,7 @@ input[type="search"]:focus{
 
 
 
-.radiobutton-sorting label:nth-child(2){
-  padding-left: 25px;
-  border-radius: 22px 0 0 22px;
-}
-.radiobutton-sorting label:nth-child(3){
-  padding-left: 10px;
-}
-.radiobutton-sorting label:last-child{
-  border-radius: 0 22px 22px 0;
-}
+
 
 .radiobutton-sorting input[type="radio"]{
   visibility: hidden;
