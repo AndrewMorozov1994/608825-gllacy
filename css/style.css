@@ -1270,6 +1270,107 @@ iframe{
 .catalog-site-navigation{
   margin-bottom: 0;
 }
+/*Корзина*/
+.crate:hover .crate-full{
+  display: block;
+}
+.crate-full{
+  box-sizing: border-box;
+  padding: 15px 10px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #323232;
+  display: none;
+  width: 540px;
+  min-height: 240px;
+  background-color: #f8f7f4;
+  position: absolute;
+  left:-425px;
+  top: 36px;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.crate-full table{
+
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  border-spacing: 0 20px;
+  margin-top: -18px;
+}
+
+.delete-item{
+  display: block;
+  font-size: 0px;
+  border: none;
+  width: 11px;
+  height: 11px;
+  background-image: url(../img/svg-gllacy/cross-small.svg);
+  background-repeat:no-repeat;
+
+}
+.crate-full button[type="button"]{
+  border: none;
+  background-color: transparent;
+  margin-bottom:8px ;
+}
+
+
+
+.image-crate,
+.image-crate-str{
+  display: block;
+  font-size: 0px;
+  width: 33px;
+  height: 33px;
+  background-image: url(../img/ice_items/creamy_orange.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-origin: border-box;
+  background-clip: content-box;
+  border-radius: 50%;
+}
+.image-crate-str{
+  background-image: url(../img/ice_items/creamy_srrowberry.jpg);
+}
+.crate-name{
+  width: 222px;
+
+}
+.crate-full td:not(.td-delete):not(.td-img)
+{
+  padding-right:20px;
+}
+.td-delete{
+  padding-right: 2px;
+}
+.td-img{
+  padding-right: 8px;
+}
+.crate-full span{
+  opacity: 0.6;
+}
+.crate-full p{
+  display: block;
+  text-align: right;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.crate-btn{
+  display: block;
+  width:170px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-radius: 27px;
+  float: right;
+  margin-bottom: 7px;
+}
+
+
 /*Активная страница с переходом*/
 .pages{
 
