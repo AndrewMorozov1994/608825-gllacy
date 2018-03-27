@@ -922,8 +922,8 @@ input[type="search"]:focus{
   margin-top: 40px;
   height: 430px;
   overflow: hidden;
-
 }
+
 .map iframe{
   width: 100vw;
 }
@@ -1318,7 +1318,7 @@ input[type="search"]:focus{
 /*ФОРМЫ*/
 .filters{
   margin-left: 13px;
-  margin-top:8px;
+  margin-top:3px;
   border: none;
 }
 .sorting{
@@ -1358,7 +1358,7 @@ input[type="search"]:focus{
   font-size: 16px;
   width: 194px;
   color: white ;
-  padding: 10px;
+  padding: 9px 10px;
   border: none;
   border-radius: 22px;
   background-color: rgba(248, 247, 244, 0.2);
@@ -1383,6 +1383,9 @@ input[type="search"]:focus{
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.2);
 }
+.range input[type="range"]{
+  width: 100%;
+}
 
 /*Форма радиобаттонов*/
 .radiobutton-sorting{
@@ -1397,19 +1400,49 @@ input[type="search"]:focus{
   margin-left: 15px;
 }
 .radiobutton-sorting label{
-
+  position: relative;
   width: 415px;
   padding: 9px 15px;
   background-color: rgba(255, 255, 255, 0.2);
 }
+.radiobutton-sorting input[type="radio"] + .radio-indicator{
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 7px;
+  left: 12px;
+  box-sizing: border-box;
+  background-image: url(../img/svg-gllacy/radio-off.svg);
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.radiobutton-sorting input[type="radio"]:checked + .radio-indicator{
+  border: none;
+  background-image: url(../img/svg-gllacy/radio-on.svg);
+  background-repeat:no-repeat;
+  background-position: center center;
+
+
+}
+
+
+
+
 .radiobutton-sorting label:nth-child(2){
+  padding-left: 25px;
   border-radius: 22px 0 0 22px;
+}
+.radiobutton-sorting label:nth-child(3){
+  padding-left: 10px;
 }
 .radiobutton-sorting label:last-child{
   border-radius: 0 22px 22px 0;
 }
 
-
+.radiobutton-sorting input[type="radio"]{
+  visibility: hidden;
+}
 
 
 
@@ -1453,7 +1486,19 @@ input[type="search"]:focus{
   padding-right: 18px;
 }
 
-
+.checkbox-sorting input[type="checkbox"]{
+  visibility: hidden;
+}
+.checkbox-sorting input[type="checkbox"] + .checkbox-indicator{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  background-image: url(../img/svg-gllacy/checkbox-off.svg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+}
 
 /*Кнопка отправка формы*/
 .sorting-button{
