@@ -1350,7 +1350,7 @@ input[type="search"]:focus{
 .sorting-select p{
   margin: 0;
   margin-left:16px;
-  margin-bottom:6px;
+  margin-bottom:4px;
 
 }
 
@@ -1362,6 +1362,10 @@ input[type="search"]:focus{
   border: none;
   border-radius: 22px;
   background-color: rgba(248, 247, 244, 0.2);
+
+}
+.sorting-select option{
+  visibility: hidden;
 }
 
 /*Форма сортировки по цене*/
@@ -1370,7 +1374,7 @@ input[type="search"]:focus{
   margin-top: auto;
 }
 .catalog-price-sorting p{
-  margin-bottom:7px;
+  margin-bottom:5px;
   margin-left: 15px;
 }
 .range{
@@ -1396,7 +1400,7 @@ input[type="search"]:focus{
 }
 .radiobutton-sorting p{
   margin: 0;
-  margin-bottom:9px;
+  margin-bottom:6px;
   margin-left: 15px;
 }
 
@@ -1515,22 +1519,57 @@ position: relative;
 
 /*Каталог*/
 .catalog-items{
+
 }
 .items{
 
+  width: 1172px;
   margin: 0 auto;
+  margin-top: 23px;
   padding: 0;
   list-style: none;
-  display: flex;
-  width: 1146px;
+  line-height: 22px;
+  display:flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .items li{
   position: relative;
-  width: 267px;
+  width: 286px;
   word-wrap: break-word;
 }
+.hh{
+  display: none;
+  bottom: -50px;
+  left: 0;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 50px;
+}
+.btn-hidden{
+  bottom: -20px;
+  left: 0;
+  position: absolute;
+  display: none;
+  z-index: 1;
+}
+.items li:hover .btn-hidden{
+  display: block;
+
+}
+.items li:hover .hh{
+  display: block;
+}
+
+
+.items li:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
 
 
 
