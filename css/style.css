@@ -669,6 +669,8 @@ input[type="search"]:focus{
   padding-right: 12px;
 }
 .item-price{
+  display: flex;
+  width: 160px;
   margin-bottom: 0;
   font-size: 45px;
   font-weight: 700;
@@ -678,7 +680,8 @@ input[type="search"]:focus{
 }
 .weight{
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 700;
+  margin-top: 5px;
 }
 .product-card img{
   background-origin: border-box;
@@ -694,7 +697,20 @@ input[type="search"]:focus{
   border-radius: 50%;
   background-image: url("../img/svg-gllacy/hit.svg");
 }
+.ruble{
+  margin-top: -6px;
+  margin-left: 5px;
+  display: block;
+  width: 31px;
+  height: 36px;
+  background-image: url(../img/svg-gllacy/ruble.svg);
+  background-repeat:no-repeat;
+}
+
+
+
 /*Подчеркивание для названия мороженок */
+
 .a_color{
   color: white;
   border-bottom:1px solid rgba(255,255,255,0.2);
@@ -703,8 +719,9 @@ input[type="search"]:focus{
   display: block;
   text-align: center;
   margin-top: 8px;
-  padding-left: 2px;
+  padding-left: 4px;
   padding-top: 0px;
+  padding-right: 2px;
   padding-bottom: 15px;
 }
 
@@ -1649,7 +1666,7 @@ position: relative;
   width: 286px;
   word-wrap: break-word;
   margin-top: -50px;
-  padding-bottom: 38px;
+  padding-bottom: 53px;
   margin-bottom: 12px;
 }
 
