@@ -85,7 +85,8 @@ a{
 
 /*Навигация в шапке*/ /**/
 
-.main-header{
+.main-header,
+.catalog-header{
   margin: 0 auto;
   background-color: transparent;
   width: 1200px;
@@ -94,6 +95,9 @@ a{
 
   justify-content: space-between;
   position: relative;
+
+}
+.main-header{
   z-index: 7;
 }
 .main-navigation{
@@ -138,9 +142,19 @@ a{
   border-radius: 5px;
   background-color: rgb(248, 247, 244);
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  z-index: 7;
 
 }
+.site-navigation div{
+  display: none;
+  position: absolute;
+  width: 142px;
+  height: 50px;
+  top: 50px;
+  left: 185px;
+  background-color: transparent;
 
+}
 .sub-menu li:first-child > a{
   border-bottom: 1px solid rgba(50,50,50, 0.2);
   padding-bottom: 4px;
@@ -166,8 +180,15 @@ a{
   font-weight: 700;
 }
 
-.site-navigation li:first-child:hover > .sub-menu{
+.site-navigation li:first-child:hover > .sub-menu
+{
   display: block;
+}
+.site-navigation li:first-child:hover .btn-hover,
+.site-navigation li:first-child:hover .a_color{
+  background-color: #f7f6f3;
+  text-decoration: none;
+  color: #323232;
 }
 .sub-menu li:hover{
   background-color: #fbded7;
@@ -175,6 +196,22 @@ a{
 .sub-menu li:active{
   background-color: #f6b5a5;
 }
+
+.site-navigation li:first-child:hover >  div{
+  display: block;
+}
+
+/* Для кнопок активной страницы*/
+.active-title-btn{
+  background-color: #d07058;
+
+}
+.site-navigation .active-title{
+  border-bottom: 1px solid transparent;
+  color: white;
+}
+/**/
+
 
 .control, .mode{
   font-size: 14px;
@@ -223,7 +260,7 @@ a{
 .control-login-form{
   display: none;
   position: absolute;
-
+  z-index: 7;
   top: 100%;
   left: -187px;
   width: 280px;
@@ -280,11 +317,7 @@ a{
   border-bottom: 1px solid rgba(50,50,50,0.3);
 }
 
-.control-login-wrapper span:hover,
-.control-login-wrapper span:active{
-  color: #e84d37;
-  border-bottom: 1px solid rgba(232,77,55,0.3);;
-}
+
 
 .control-login-button{
   width: 102px;
@@ -298,7 +331,18 @@ a{
 .control-login:hover > .control-login-form{
   display: block;
 }
+.control-login:hover .btn-login,
+.control-login:hover span
+{
+  background-color: #f7f6f3;
+  color: #323232;
 
+}
+.control-login-wrapper span:hover,
+.control-login-wrapper span:active{
+  color: #e84d37;
+  border-bottom: 1px solid rgba(232,77,55,0.3);
+}
 
 .btn-login::before{
   position: absolute;
@@ -311,7 +355,8 @@ a{
   background-image: url(../img/svg-gllacy/entrancewhite.svg.png);
 }
 .btn-login:hover::before,
-.btn-login:focus::before{
+.btn-login:focus::before,
+.control-login:hover .btn-login::before{
   background-image: url(../img/svg-gllacy/entrance.svg);
 }
 
@@ -334,7 +379,7 @@ a{
   color: #323232;
 }
 .control-search a:hover,
-.control-search a:focus {
+.control-search a:focus{
   background-position: center center;
   background-image: url("../img/svg-gllacy/loupe_black.svg");
   background-repeat:no-repeat;
@@ -342,6 +387,13 @@ a{
 .control-search{
   position: relative;
 }
+.control-search:hover a{
+  background: #f7f6f3;
+  background-position: center center;
+  background-image: url("../img/svg-gllacy/loupe_black.svg");
+  background-repeat:no-repeat;
+}
+
 /*Инпут поиска*/
 .control-search-form{
   padding: 20px 15px;
@@ -351,6 +403,7 @@ a{
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  z-index: 7;
 }
 input[type="search"]{
   width: 100%;
@@ -391,7 +444,8 @@ input[type="search"]:focus{
 .crate{
   position: relative;
 }
-.btn-crate::before{
+.btn-crate::before,
+.btn-crate-full::before{
   position: absolute;
   content: "";
   width:21px;
@@ -401,8 +455,14 @@ input[type="search"]:focus{
   background-image: url(../img/svg-gllacy/basket.svg);
   background-repeat:no-repeat;
 }
+
+
+
 .btn-crate:hover::before,
-.btn-crate:focus::before{
+.btn-crate:focus::before,
+.crate:hover .btn-crate::before,
+.btn-crate-full::before{
+
   background-image: url(../img/svg-gllacy/basket-red.svg);
 
 }
@@ -1291,7 +1351,14 @@ iframe{
 .crate:hover .crate-full{
   display: block;
 }
+.crate:hover .btn-crate,
+.crate:hover span,
+.btn-crate-full{
+  color: #323232;
+  background-color:  #f7f6f3;
+}
 .crate-full{
+  z-index: 7;
   box-sizing: border-box;
   padding: 15px 10px;
   font-size: 13px;
@@ -1432,6 +1499,9 @@ iframe{
   background-color: transparent;
 
 }
+.active-pages-page{
+  pointer-events: none;
+}
 
 
 .section-title{
@@ -1446,7 +1516,7 @@ iframe{
 /*ФОРМЫ*/
 .filters{
   margin-left: 13px;
-  margin-top:4px;
+  margin-top:9px;
   border: none;
 }
 .sorting{
@@ -1468,6 +1538,7 @@ iframe{
 
 
 .sorting-select{
+  position: relative;
   width: 194px;
   line-height: 18px;
   color: white ;
@@ -1482,6 +1553,7 @@ iframe{
 
 }
 
+
 .sorting-select select{
   font-size: 16px;
   width: 194px;
@@ -1492,10 +1564,35 @@ iframe{
   background-color: rgba(248, 247, 244, 0.2);
 
 }
-.sorting-select option{
-  visibility: hidden;
+.sorting-select select:hover{
+  color: #323232;
 }
 
+select {
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.select{
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 170px;
+  width: 0;
+  height: 0;
+  border: 5px solid;
+  border-top-width: 10px;
+  border-bottom-width: 0;
+  border-top-color: #ffffff;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  pointer-events: none;
+}
+
+select:hover + .select{
+  border-top-color: #323232;
+}
 /*Форма сортировки по цене*/
 
 .catalog-price-sorting{
@@ -1561,6 +1658,7 @@ iframe{
   background-repeat:no-repeat;
   background-position: center center;
   background-size: cover;
+  opacity: 0.5;
 }
 .radiobutton-sorting input[type="radio"]:checked + .radio-indicator{
   border: none;
@@ -1571,7 +1669,9 @@ iframe{
 .radiobutton-sorting input[type="radio"]{
   visibility: hidden;
 }
-
+.radiobutton-sorting input[type="radio"] + .radio-indicator:hover{
+  opacity: 1;
+}
 
 
 
@@ -1623,26 +1723,43 @@ position: relative;
   background-size: cover;
   background-repeat:no-repeat;
   background-position: center center;
+  opacity: 0.5;
 }
 .checkbox-sorting input[type="checkbox"]:checked + .checkbox-indicator{
   width: 23px;
   background-image: url(../img/svg-gllacy/checkbox-on.svg);
 
 }
+.checkbox-sorting input[type="checkbox"] + .checkbox-indicator:hover{
+  opacity: 1;
+}
+
 
 /*Кнопка отправка формы*/
 .sorting-button{
+  width: 145px;
   margin-bottom: 1px;
   margin-top: auto;
   margin-left: 16px;
   color: white;
-  padding: 7px 28px;
+  padding: 8px 25px;
   border-radius: 22px;
+  border: none;
   font-size: 16px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(255, 255, 255);
+  box-shadow: inset 0px 0px 0px 2px rgb(255,255,255);
   background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+
+}
+.sorting-button:hover{
+  background-color: #fff;
+  color: #323232;
+}
+
+.sorting-button:active {
+  background-color: rgb(237, 237, 237);
+  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.4);
+  color: #323232;
 }
 
 /*Каталог*/
@@ -1719,13 +1836,21 @@ position: relative;
 
 }
 .page-number li{
-
+  border-radius: 50%;
   width: 27px;
   height: 27px;
   text-align: center;
-
-  border-radius: 50%;
   margin-left: 2px;
+}
+.page-number li:hover{
+  background-color: rgba(255,255,255, 0.2);
+}
+.page-number li:active {
+  background-color: #fff;
+}
+.page-number li:active > a{
+  color: #323232;
+
 }
 .page-number a{
   display: block;
@@ -1733,7 +1858,7 @@ position: relative;
   text-decoration: none;
 }
 .pagination-active{
-  border-radius: 50%;
+
   color:#323232;
   background-color: #fff;
 }
@@ -1772,3 +1897,4 @@ position: relative;
   top:10px;
   right: -21px;
 }
+

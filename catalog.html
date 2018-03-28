@@ -8,14 +8,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   </head>
   <body>
-  <header class="main-header catalog-header">
+  <header class=" catalog-header">
     <nav class="main-navigation">
       <a class="main-logo catalog-main-logo" href="http://index.html">
         <img src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип Глэйси">
       </a>
       <ul class="site-navigation catalog-site-navigation">
         <li>
-          <a class="btn-hover" href="http://catalog.html"><span class="a_color">Каталог</span></a>
+          <a class="btn-hover active-title-btn" href="http://catalog.html"><span class="a_color active-title">Каталог</span></a>
+          <div></div>
           <ul class=" sub-menu">    <!--Всплывающий список-->
             <li><a href="#"><span class="sub-menu-news">Новинки</span></a></li>
             <li><a href="#">Сливочное</a></li>
@@ -54,7 +55,7 @@
           </form>
        </div>
        <div class="crate">
-         <a class="btn-crate btn-control " href="#"><span>2 товара</span></a>
+         <a class="btn-crate btn-control btn-crate-full " href="#"><span>2 товара</span></a>
          <section class="crate-full ">
             <table class="crate-table">
               <tr>
@@ -112,6 +113,7 @@
                   <option value="rich">сначала дорогие</option>
                   <option value="calories">по жирности</option>
               </select>
+            <div class="select"></div>
           </div>
           <div class="catalog-price-sorting">
            <label for="range-sorting"><p>Цена: 100 руб. – 500 руб.</p></label>
