@@ -204,11 +204,14 @@ a{
 /* Для кнопок активной страницы*/
 .active-title-btn{
   background-color: #d07058;
-
+}
+.active-title-btn a{
+  color: white;
 }
 .site-navigation .active-title{
   border-bottom: 1px solid transparent;
   color: white;
+  background-color: #d07058;
 }
 /**/
 
@@ -924,7 +927,12 @@ input[type="search"]:focus{
 .blog-news a > span{
   color:#323232;
   border-bottom: 2px solid rgba(50,50,50,1);
+  line-height: 30px;
+  background-color: rgba(255, 255, 255,0.8)
 }
+
+
+
 
 .blog-news a:hover > span,
 .blog-news a:active > span{
@@ -1238,6 +1246,15 @@ iframe{
 .social-vk:hover{
   opacity:1;
 }
+.social-in:active,
+.social-vk:active,
+.social-fb:active,
+.social-tw:active{
+  box-shadow: inset 0px 3px 1px 0px rgba(136, 136, 136, 0.5);
+}
+
+
+
 /*Список ссылок в футере*/
 
 .info{
@@ -1338,6 +1355,12 @@ iframe{
 }
 
 /*CATALOG HTML*/  /**/
+.catalog-body{
+  background-image: linear-gradient(to bottom, #9db1a5 0%, #849d8f 35%);
+  background-repeat:no-repeat;
+}
+
+
 .catalog-header{
   margin-top: -5px;
 }
@@ -1555,25 +1578,25 @@ iframe{
 
 
 .sorting-select select{
+  font: inherit;
+  margin-left: 1px;
   font-size: 16px;
   width: 194px;
   color: white ;
-  padding: 9px 10px;
+  padding: 9px 15px;
   border: none;
   border-radius: 22px;
   background-color: rgba(248, 247, 244, 0.2);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
 }
 .sorting-select select:hover{
   color: #323232;
 }
 
-select {
 
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
 .select{
   content: "";
   position: absolute;
@@ -1595,27 +1618,73 @@ select:hover + .select{
 }
 /*Форма сортировки по цене*/
 
-.catalog-price-sorting{
+.range-filter{
   margin-top: auto;
+  width: 218px;
+  margin-right: 17px;
 }
-.catalog-price-sorting p{
-  margin-bottom:5px;
-  margin-left: 15px;
-}
-.range{
+
+.range-controls{
+  position: relative;
   margin: 0;
   margin-top: auto;
   margin-right: 15px;
   width: 220px;
-  padding: 5px 10px;
+  height: 36px;
+  padding: 5px 22px;
   border-radius: 22px;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.2);
 }
-.range input[type="range"]{
-  width: 100%;
-}
+.price-controls{
+  margin-left: 16px;
+  display: inline-block;
+  width: 200px;
+  height: 20px;
+  font-size: 14px;
 
+}
+.price-controls input[type="text"]{
+  margin: 0;
+  font: inherit;
+  font-size: 14px;
+  color: white;
+  width: 28px;
+  background-color: transparent;
+  border: none;
+}
+.scale{
+  height: 4px;
+  margin-top: 11px;
+  background-color: rgba(248,247,244,0.5);
+}
+.bar{
+
+
+  height: 4px;
+  background-color: #f8f7f4;
+
+
+}
+.toggle{
+  position: absolute;
+  width: 20px;
+  height: 22px;
+  background-image: url(../img/svg-gllacy/filter-button.svg);
+}
+.toggle-min{
+  top: 8px;
+  left: 35px;
+}
+.toggle-max{
+  top:8px;
+  right: 67px;
+}
+.toggle-min:hover,
+.toggle-max:hover{
+  transform: scale(1.1,1.1);
+  cursor: pointer;
+}
 /*Форма радиобаттонов*/
 .radiobutton-sorting{
 
@@ -1680,13 +1749,13 @@ select:hover + .select{
 .checkbox-sorting{
 
   margin: 0;
-  margin-top: 14px;
+  margin-top: 17px;
 
 }
 .checkbox-sorting p{
   margin: 0;
   margin-left: 16px;
-  margin-bottom: 9px;
+  margin-bottom: 6px;
 }
 .checkbox-sorting div{
   width: 703px;
@@ -1698,6 +1767,7 @@ select:hover + .select{
   padding: 1.5px;
   padding-left: 29px;
   padding-right: 15px;
+  margin-left: 1px;
 }
 
 .checkbox-sorting label{
@@ -1737,15 +1807,16 @@ position: relative;
 
 /*Кнопка отправка формы*/
 .sorting-button{
+  font: inherit;
+  font-size: 16px;
   width: 145px;
-  margin-bottom: 1px;
+  margin-bottom: 0;
   margin-top: auto;
   margin-left: 16px;
   color: white;
-  padding: 8px 25px;
+  padding: 2px 25px;
   border-radius: 22px;
   border: none;
-  font-size: 16px;
   box-shadow: inset 0px 0px 0px 2px rgb(255,255,255);
   background-color: rgba(255, 255, 255, 0.2);
   outline: none;

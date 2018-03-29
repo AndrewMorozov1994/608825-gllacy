@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   </head>
-  <body>
+  <body class="catalog-body">
   <header class=" catalog-header">
     <nav class="main-navigation">
       <a class="main-logo catalog-main-logo" href="http://index.html">
@@ -19,7 +19,7 @@
           <div></div>
           <ul class=" sub-menu">    <!--Всплывающий список-->
             <li><a href="#"><span class="sub-menu-news">Новинки</span></a></li>
-            <li><a href="#">Сливочное</a></li>
+            <li class="active-title-btn"><a href="#">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
             <li><a href="#">Фруктовый лед</a></li>
             <li><a href="#">Мелорин</a></li>
@@ -115,12 +115,20 @@
               </select>
             <div class="select"></div>
           </div>
-          <div class="catalog-price-sorting">
-           <label for="range-sorting"><p>Цена: 100 руб. – 500 руб.</p></label>
-              <div class="range">
-               <input type="range" id="range-sorting" min="100" max="500" step="1">          <!--2 ползунка реализуются только с помощью скрипта?-->
-             </div>
+          <div class="range-filter">
+            <div class="price-controls">Цена:
+              <label class="min-price"><input name="min-price" type="text" value="100">руб.</label>
+              -
+              <label class="max-price"> <input name="max-price" type="text" value="500">руб.</label>
             </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="margin-left: 17%; width: 50%"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+          </div>
            <div class="radiobutton-sorting">
               <p>Жирность:</p>
              <div>
