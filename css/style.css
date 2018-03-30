@@ -1016,15 +1016,6 @@ input[type="search"]:focus{
   box-shadow: inset 0 0 0 1px  rgba(46,136,228,0.52);
 }
 
-
-/*Блок с адресом на карте*/
-.map{
-
-  position: relative;
-  margin-top: 40px;
-  height: 430px;
-  overflow: hidden;
-}
 .interactive-map{
 
   position: relative;
@@ -1032,14 +1023,27 @@ input[type="search"]:focus{
   border: none;
 }
 iframe{
+
   margin-left:-17px;
   width: 100vw;
   position: absolute;
   bottom: 0px;
 
 }
+/*Блок с адресом на карте*/
+.map{
+  margin: 0 auto;
+  width: 1200px;
+  text-align: center;
+  position: relative;
+  margin-top: 40px;
+  height: 430px;
+  overflow: hidden;
+}
+
 
 .adress{
+  text-align: left;
   position: absolute;
   font-size: 14px;
   line-height: 20px;
