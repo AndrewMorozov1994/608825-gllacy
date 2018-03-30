@@ -276,6 +276,8 @@ a{
 }
 .control-login-form input[type="email"],
 .control-login-form input[type="password"]{
+  font: inherit;
+  font-weight: 700;
   width: 240px;
   padding: 10px;
   margin-bottom: 20px;
@@ -283,6 +285,11 @@ a{
   border-radius: 5px;
   border:1px solid rgba(178,178,178,0.52);
   outline: none;
+}
+.control-login-form input[type="email"]::-webkit-input-placeholder,
+.control-login-form input[type="password"]::-webkit-input-placeholder{
+  font-size: 14px;
+  font-weight: 400;
 }
 .control-login-form input[type="email"]:hover,
 .control-login-form input[type="password"]:hover{
@@ -409,12 +416,19 @@ a{
   z-index: 7;
 }
 input[type="search"]{
+  font: inherit;
+  font-weight: 700;
   width: 100%;
   padding: 15px 10px;
   border-radius: 5px;
   border:1px solid rgba(178,178,178,0.52);
   box-sizing: border-box;
   outline: none;
+}
+.control-search-form input[type="search"]::-webkit-input-placeholder{
+  color: #999999;
+  font-weight: 400;
+  font-size: 14px;
 }
 input[type="search"]:hover{
   box-shadow: inset 0 0 0 1px  rgba(154,154,154,0.52);
@@ -907,6 +921,7 @@ input[type="search"]:focus{
 }
 .blog-news-position p{
   margin: 0;
+  margin-bottom: -1px;
 
 }
 .blog-news-position{
@@ -917,27 +932,22 @@ input[type="search"]:focus{
 }
 
 
-.blog-news-position a{
+.blog-news a > p {
   font-size: 24px;
-  line-height: 30px;
-  color: #323232;
-  font-weight: 700;
-}
-
-.blog-news a > span{
   color:#323232;
-  border-bottom: 2px solid rgba(50,50,50,1);
   line-height: 30px;
+  text-decoration: underline ;
+  font-weight: 700;
   background-color: rgba(255, 255, 255,0.8)
 }
 
 
 
 
-.blog-news a:hover > span,
-.blog-news a:active > span{
+.blog-news a:hover > p,
+.blog-news a:active > p{
   color: #e84d37;
-  border-bottom: 2px solid rgba(232,77,55,0.3);
+ text-decoration: underline rgba(232,77,55,0.3);
 }
 
 
@@ -965,7 +975,7 @@ input[type="search"]:focus{
   border-radius: 15px;
 }
 .dispatch-form{
-  margin-top: 8px;
+  margin-top: 5px;
 
 }
 .dispatch-button{
@@ -984,7 +994,7 @@ input[type="search"]:focus{
   font: inherit;
   font-weight: 700;
   color: #323232;
-  padding-left: 10px;
+  padding-left: 12px;
   padding-right: 10px;
   outline: none;
   box-sizing: border-box;
@@ -993,6 +1003,10 @@ input[type="search"]:focus{
   margin-left:20px;
   border: 1px solid rgba(178,178,178,0.52);
   border-radius: 5px;
+}
+.dispatch-form input[type="email"]::-webkit-input-placeholder{
+  color: #999999;
+  font-weight: 400;
 }
 
 .dispatch-form input[type="email"]:hover{
@@ -1012,11 +1026,13 @@ input[type="search"]:focus{
   overflow: hidden;
 }
 .interactive-map{
+
   position: relative;
   height:0px;
   border: none;
 }
 iframe{
+  margin-left:-17px;
   width: 100vw;
   position: absolute;
   bottom: 0px;
@@ -1081,6 +1097,11 @@ iframe{
 }
 
 
+
+
+
+
+
 /*Модалка*/
 .modal-wrapper{
   display: none;
@@ -1114,6 +1135,7 @@ iframe{
 .modal input[type="email"]{
   font-size: 16px;
   font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
   box-sizing: border-box;
   width: 268px;
   padding: 8px 15px;
@@ -1121,18 +1143,27 @@ iframe{
   margin-right: auto;
   margin-bottom: 20px;
   border:1px solid rgba(178,178,178,0.52);
+  border-radius: 5px;
   outline: none;
 }
 .modal textarea{
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
+  font-weight: 700;
   width: 100%;
   min-height: 170px;
   box-sizing: border-box;
   padding: 8px 15px;
   outline: none;
   border:1px solid rgba(178,178,178,0.52);
+  border-radius: 5px;
 }
+.modal input[type="text"]::-webkit-input-placeholder,
+.modal input[type="email"]::-webkit-input-placeholder,
+.modal textarea::-webkit-input-placeholder{
+  font-weight: 400;
+}
+
 
 .modal input[type="text"]:hover,
 .modal input[type="email"]:hover,
