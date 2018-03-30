@@ -1380,9 +1380,7 @@ iframe{
   border-bottom: 1px solid rgba(255,188,158,0.3);
 }
 
-.html-logo{
 
-}
 
 /*CATALOG HTML*/  /**/
 .catalog-body{
@@ -1923,7 +1921,7 @@ position: relative;
 /*Пагинатор*/
 .pagination{
   width: 1146px;
-  margin-top: -20px;
+  margin-top: -17px;
   margin-left:32px;
   border-bottom: 1px solid rgba(255,255,255,0.3);
   padding-bottom: 8px;
@@ -1981,11 +1979,11 @@ position: relative;
 .back::before{
   content: "";
   position: absolute;
-  width: 8px;
+  width: 12px;
   height: 12px;
   background-image: url(../img/svg-gllacy/icon-right-small.svg);
   background-repeat:no-repeat;
-  background-position: center center;
+  background-position: 1px 0;
 }
 .back::before{
   transform: rotate(180deg);
