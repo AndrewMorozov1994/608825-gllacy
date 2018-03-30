@@ -749,11 +749,10 @@ input[type="search"]:focus{
 .item-price{
   display: flex;
   width: 160px;
-  margin-bottom: 0;
+  margin-bottom: 30px;
+  margin-top: -53px;
   font-size: 45px;
   font-weight: 700;
-  position: absolute;
-  top: 182px;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 .weight{
