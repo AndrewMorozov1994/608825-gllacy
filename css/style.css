@@ -1034,7 +1034,7 @@ iframe{
 .map{
   margin: 0 auto;
   width: 1200px;
-  text-align: center;
+
   position: relative;
   margin-top: 40px;
   height: 430px;
@@ -1043,7 +1043,7 @@ iframe{
 
 
 .adress{
-  text-align: left;
+
   position: absolute;
   font-size: 14px;
   line-height: 20px;
