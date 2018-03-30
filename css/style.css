@@ -1026,6 +1026,7 @@ iframe{
 
   margin-left:-17px;
   width: 100vw;
+  height:430px;
   position: absolute;
   bottom: 0px;
 
@@ -1043,7 +1044,6 @@ iframe{
 
 
 .adress{
-
   position: absolute;
   font-size: 14px;
   line-height: 20px;
