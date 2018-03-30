@@ -145,13 +145,14 @@ a{
   z-index: 7;
 
 }
-.site-navigation div{
+.sub-menu::after{
+  content: "";
   display: none;
   position: absolute;
   width: 142px;
   height: 50px;
-  top: 50px;
-  left: 185px;
+  top: -20px;
+  left: 0;
   background-color: transparent;
 
 }
@@ -197,7 +198,7 @@ a{
   background-color: #f6b5a5;
 }
 
-.site-navigation li:first-child:hover >  div{
+.site-navigation li:first-child:hover > .sub-menu::after{
   display: block;
 }
 
