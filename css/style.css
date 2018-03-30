@@ -1363,7 +1363,7 @@ iframe{
 }
 .footer-copyright{
   font-weight: 400;
-  margin-top:36px;
+  margin-top: -15px;
   margin-bottom: 12px;
   font-size: 12px;
   color: white;
@@ -1381,7 +1381,6 @@ iframe{
 }
 
 .html-logo{
-  position: absolute;
 
 }
 
