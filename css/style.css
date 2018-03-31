@@ -93,17 +93,17 @@ a{
 /*Навигация в шапке*/ /**/
 .main-header,
 .catalog-header{
-
+  position: relative;
   margin: 0 auto;
   background-color: transparent;
   width: 1200px;
   display: flex;
   justify-content: space-between;
-  position: relative;
+  z-index: 10;
 }
 
 .main-header{
-  z-index: 7;
+  z-index: 10;
 }
 
 .main-navigation{
@@ -148,7 +148,6 @@ a{
   border-radius: 5px;
   background-color: rgb(248, 247, 244);
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-  z-index: 7;
 }
 
 .sub-menu::after{
@@ -238,10 +237,13 @@ a{
 }
 
 .mode{
+  display: block;
   margin-top: 22px;
-  text-align: end;
+  text-align: right;
   padding-right: 9px;
   line-height: 2px;
+
+
 }
 
 .control {
@@ -253,6 +255,7 @@ a{
 .control-wrapper{
   margin:7px;
   margin-right: 18px;
+
 }
 
 .control div{
@@ -508,7 +511,13 @@ input[type="search"]:focus{
   position: relative;
   margin: 0 auto;
   width: 1200px;
-  top: -137px;
+  top: -57px;
+}
+.main-container-index{
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  margin-top: -137px;
 }
 
 /*Все для слайдера*/
@@ -678,6 +687,7 @@ input[type="search"]:focus{
 
 .sale-chocolate p,
 .sale-raze p{
+  font-size: 18px;
   margin: 0;
   margin-left: 18px;
   margin-right: 20px;
@@ -819,6 +829,7 @@ input[type="search"]:focus{
 .seo{
   margin: 0 auto;
   margin-top: -30px;
+  background-color: #e9dcc0;
   background-image: url("../img/waffle_bg.jpg");
   background-repeat:repeat-y;
   color: #323232;
@@ -1044,7 +1055,7 @@ iframe{
   width: 100%;
   height:429px;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   border: none;
 }
 
@@ -1246,15 +1257,18 @@ iframe{
 /*Центровка футера*/
 .page-footer{
   margin: 0 auto;
-  margin-top: 17px;
+  padding-top: 16px;
   width: 1200px;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
 }
-
+.page-footer-catalog{
+  position: relative;
+  top:-57px;
+}
 .share{
-  margin-top: 15px;
+  margin-top: 20px;
   margin-left: 28px;
 }
 
@@ -1414,6 +1428,7 @@ iframe{
 
 .catalog-header{
   margin-top: -5px;
+  z-index: 6;
 }
 
 .catalog-main-logo{
@@ -1537,14 +1552,13 @@ iframe{
 
 /*Активная страница с переходом*/
 .pages{
+  position: relative;
   width: 1200px;
-  padding-top: 79px;
   margin: 0 auto;
 }
 
 .active-pages{
   position: relative;
-  z-index: 6;
   margin-left: 26px;
   margin-bottom: 0;
   padding-left: 0;
@@ -1558,7 +1572,9 @@ iframe{
 .active-pages li{
   padding-right: 22px;
 }
-
+.active-pages li:not(.active-pages-page){
+  z-index: 10;
+}
 .active-pages a{
   font-size: 14px;
   text-decoration: none;
@@ -1573,6 +1589,7 @@ iframe{
 .active-pages span:active{
   color: #ffbc9e;
   border-bottom: 1px solid rgba(255,188,158,0.3);
+
 }
 
 .active-pages span::after{
@@ -1591,20 +1608,23 @@ iframe{
 }
 
 .section-title{
+  display: block;
+  width: 1146px;
+  text-align: left;
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
-  margin: 0;
+  margin: 0 auto;
   margin-top: -4px;
-  margin-left: 26px;
+
 }
 
 /*ФОРМЫ*/
 .filters{
   width: 1200px;
   margin: 0 auto;
-  padding-left: 28px;
-  margin-top:9px;
+  padding-left: 25px;
+  margin-top:14px;
   border: none;
 }
 
@@ -1613,6 +1633,7 @@ iframe{
   width: 880px;
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 /*Общее*/
@@ -1778,7 +1799,7 @@ select:hover + .select{
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 1.5px;
-  padding-left: 25px;
+  padding-left: 33px;
   padding-right: 15px;
   box-sizing: border-box;
   border-radius: 23px;
@@ -1786,16 +1807,16 @@ select:hover + .select{
 
 .radiobutton-sorting input[type="radio"] + .radio-indicator{
   position: absolute;
-  width: 22px;
-  height: 22px;
-  top: 6px;
-  left: -11px;
+  width: 27px;
+  height: 27px;
+  top: 3px;
+  left: -22px;
   box-sizing: border-box;
   background-image: url(../img/svg-gllacy/radio-off.svg);
   background-repeat:no-repeat;
   background-position: center center;
-  background-size: cover;
   opacity: 0.5;
+  transform: scale(0.85);
 }
 
 .radiobutton-sorting input[type="radio"]:checked + .radio-indicator{
@@ -1833,8 +1854,8 @@ select:hover + .select{
   box-sizing: border-box;
   border-radius: 23px;
   padding: 1.5px;
-  padding-left: 29px;
-  padding-right: 15px;
+  padding-left: 36px;
+  padding-right: 18px;
   margin-left: 1px;
 }
 
@@ -1853,7 +1874,7 @@ position: relative;
 .checkbox-sorting input[type="checkbox"] + .checkbox-indicator{
   position: absolute;
   top: 7px;
-  left: -12px;
+  left: -20px;
   width: 20px;
   height: 20px;
   box-sizing: border-box;
@@ -1907,7 +1928,7 @@ position: relative;
 .items{
   width: 1172px;
   margin: 0 auto;
-  margin-top: 73px;
+  margin-top: 83px;
   padding: 0;
   list-style: none;
   line-height: 22px;
@@ -1951,14 +1972,15 @@ position: relative;
 /*Пагинатор*/
 .pagination{
   width: 1146px;
+  margin: 0 auto;
   margin-top: -17px;
-  margin-left:32px;
   border-bottom: 1px solid rgba(255,255,255,0.3);
   padding-bottom: 8px;
 }
 
 .page-number{
   margin-bottom: 0;
+  margin-right: -5px;
   display: flex;
   justify-content: flex-end;
   list-style: none;
@@ -2024,11 +2046,11 @@ position: relative;
 .back::before{
   transform: rotate(180deg);
   top:10px;
-  left: 5px;
+  left: 3px;
   opacity: 0.2;
 }
 
 .next::after{
   top:10px;
-  right: -21px;
+  right: -25px;
 }
