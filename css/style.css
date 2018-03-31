@@ -93,6 +93,7 @@ a{
 /*Навигация в шапке*/ /**/
 .main-header,
 .catalog-header{
+
   margin: 0 auto;
   background-color: transparent;
   width: 1200px;
@@ -504,9 +505,10 @@ input[type="search"]:focus{
 }
 
 .main-container{
+  position: relative;
   margin: 0 auto;
-  margin-top: -137px;
   width: 1200px;
+  top: -137px;
 }
 
 /*Все для слайдера*/
@@ -1261,6 +1263,7 @@ iframe{
   font-size:0;
   display: inline-block;
   width: 37px;
+  vertical-align: middle;
   height: 37px;
   margin-right: 8px;
   border: 3px solid rgba(255,255,255,0.5);
@@ -1534,7 +1537,9 @@ iframe{
 
 /*Активная страница с переходом*/
 .pages{
+  width: 1200px;
   padding-top: 79px;
+  margin: 0 auto;
 }
 
 .active-pages{
@@ -1596,7 +1601,9 @@ iframe{
 
 /*ФОРМЫ*/
 .filters{
-  margin-left: 13px;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 28px;
   margin-top:9px;
   border: none;
 }
@@ -1645,7 +1652,12 @@ iframe{
   background-color: rgba(248, 247, 244, 0.2);
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+}
+
+select::-ms-expand{
+  color: transparent;
+  border: none;
+  background-color: transparent;
 }
 
 .sorting-select select:hover{
@@ -1863,6 +1875,7 @@ position: relative;
 
 /*Кнопка отправка формы*/
 .sorting-button{
+  height: 36px;
   font: inherit;
   font-size: 16px;
   width: 145px;
@@ -1876,6 +1889,7 @@ position: relative;
   box-shadow: inset 0px 0px 0px 2px rgb(255,255,255);
   background-color: rgba(255, 255, 255, 0.2);
   outline: none;
+
 }
 
 .sorting-button:hover{
