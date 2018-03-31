@@ -511,7 +511,7 @@ input[type="search"]:focus{
 
 /*Все для слайдера*/
 .site-wrapper {
-  min-width: 940px;
+  min-width: 1200px;
   background-image: url("../img/slider/ice_bg1.png");
   background-repeat: no-repeat;
   background-position: top center;
@@ -534,6 +534,7 @@ input[type="search"]:focus{
 .container {
   width: 900px;
   margin: 0 auto;
+
   padding: 0 20px;
 }
 
