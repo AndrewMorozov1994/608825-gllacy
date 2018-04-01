@@ -7,14 +7,18 @@
 }
 
 body{
+  width: 100%;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 33.52px;
-  background-color: #849d8f;
   color: #ffffff;
+}
+
+.body{
+  background-color: #849d8f;
 }
 
 /*Цвет для всех ссылок*/
@@ -802,10 +806,8 @@ input[type="search"]:focus{
 .ruble{
   margin-top: -6px;
   margin-left: 5px;
-  display: block;
   width: 31px;
   height: 36px;
-  background-image: url(../img/svg-gllacy/ruble.svg);
   background-repeat:no-repeat;
 }
 
@@ -1422,8 +1424,9 @@ iframe{
 
 /*CATALOG HTML*/  /**/
 .catalog-body{
-  background-image: linear-gradient(to bottom, #9db1a5 0%, #849d8f 35%);
-  background-repeat:no-repeat;
+  background: linear-gradient(to bottom, #9db1a5 0%, #849d8f 35%) no-repeat center fixed;
+  -webkit-background-size:cover;
+  background-size:cover;
 }
 
 .catalog-header{
