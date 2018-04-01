@@ -32,7 +32,7 @@ a{
   border-radius: 18px;
   margin-top:5px;
   color: rgba(255,255,255,0.2);
-  display: inline-block;
+  display: block;
 }
 
 .btn-hover > span{
@@ -57,7 +57,7 @@ a{
 /*для всех ссылок С ГРАДИЕНТОМ*/  /*не забыть расставить класс для нужных элементов в html*/
 .btn{
   text-decoration: none;
-  display: inline-block;
+  display: block;
   padding: 10px;
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
@@ -263,7 +263,7 @@ a{
 }
 
 .control-search a{
-  display: inline-block;
+  display: block;
   width: 31px;
   height: 31px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -469,7 +469,6 @@ input[type="search"]:focus{
 }
 
 .btn-login{
-  display: inline-block;
   width: 92px;
 }
 
@@ -1693,6 +1692,7 @@ select:hover + .select{
 .price-controls{
   margin-left: 16px;
   display: inline-block;
+  vertical-align: top;
   width: 200px;
   height: 20px;
   font-size: 14px;
