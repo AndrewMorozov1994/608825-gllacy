@@ -113,7 +113,7 @@ a{
 .main-navigation{
   position: relative;
   padding-top: 9px;
-  padding-left: 0px;
+  padding-left: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -151,7 +151,7 @@ a{
   left: 185px;
   border-radius: 5px;
   background-color: rgb(248, 247, 244);
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .sub-menu::after{
@@ -176,9 +176,7 @@ a{
 
 .sub-menu a{
   padding: 0;
-  margin: 0;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin: 0 20px 0 20px;
   font: inherit;
   font-size: 14px;
   font-weight: 400;
@@ -257,9 +255,7 @@ a{
 }
 
 .control-wrapper{
-  margin:7px;
-  margin-right: 18px;
-
+  margin:7px 18px 7px 7px;
 }
 
 .control div{
@@ -290,11 +286,10 @@ a{
   left: -187px;
   width: 280px;
   background-color: #f8f7f4;
-  padding: 20px;
-  padding-bottom: 25px;
+  padding: 20px 20px 25px 20px;
   box-sizing: border-box;
   border-radius: 5px;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .control-login-form input[type="email"],
@@ -357,8 +352,7 @@ a{
 .control-login-button{
   width: 102px;
   padding: 15px 0;
-  margin: auto 0;
-  margin-top: 0px;
+  margin: 0 0 auto 0;
   font-size: 18px;
   font-weight: 700;
 }
@@ -476,7 +470,7 @@ input[type="search"]:focus{
 
 .btn-login{
   display: inline-block;
- width: 92px;
+  width: 92px;
 }
 
 .btn-crate{
@@ -519,9 +513,8 @@ input[type="search"]:focus{
 }
 .main-container-index{
   position: relative;
-  margin: 0 auto;
+  margin: -137px auto 0 auto;
   width: 1200px;
-  margin-top: -137px;
 }
 
 /*Все для слайдера*/
@@ -549,7 +542,6 @@ input[type="search"]:focus{
 .container {
   width: 900px;
   margin: 0 auto;
-
   padding: 0 20px;
 }
 
@@ -573,8 +565,7 @@ input[type="search"]:focus{
 
 .slide-title {
   width: 700px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
   font-size: 60px;
   line-height: 60px;
   font-weight: 800;
@@ -582,8 +573,7 @@ input[type="search"]:focus{
 
 .slide-button {
   display: inline-block;
-  padding: 10px 40px;
-  padding-bottom: 12px;
+  padding: 10px 40px 12px 40px;
   font-weight: 600;
   font-size: 32px;
   line-height: 42px;
@@ -663,8 +653,7 @@ input[type="search"]:focus{
 
 /*Общий блок для малины и шоколада*/
 .sale-wrapper{
-  margin: 0 auto;
-  margin-top: 40px;
+  margin: 40px auto 0 auto;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
@@ -692,11 +681,7 @@ input[type="search"]:focus{
 .sale-chocolate p,
 .sale-raze p{
   font-size: 18px;
-  margin: 0;
-  margin-left: 18px;
-  margin-right: 20px;
-  margin-top: 15px;
-  margin-bottom: 45px;
+  margin: 15px 20px 45px 18px;
 }
 
 .sale-raze .btn-raze,
@@ -736,8 +721,7 @@ input[type="search"]:focus{
 /*Общий блок для хит-мороженок*/
 .catalog-list{
   width: 1172px;
-  margin: 0 auto;
-  margin-top: 83px;
+  margin: 83px auto 0 auto;
   padding: 0;
   list-style: none;
   line-height: 22px;
@@ -821,16 +805,12 @@ input[type="search"]:focus{
   display: block;
   text-align: center;
   margin-top: 8px;
-  padding-left: 4px;
-  padding-top: 0px;
-  padding-right: 2px;
-  padding-bottom: 15px;
+  padding: 0 2px 15px 4px ;
 }
 
 /*Все для вафельки*/
 .seo{
-  margin: 0 auto;
-  margin-top: -30px;
+  margin: -30px auto 0 auto;
   background-color: #e9dcc0;
   background-image: url("../img/waffle_bg.jpg");
   background-repeat:repeat-y;
@@ -932,8 +912,7 @@ input[type="search"]:focus{
 
 /*Новости блога*/
 .news_and_dispatch{
-  margin: 0 auto;
-  margin-top: 40px;
+  margin: 40px auto 0 auto;
   width: 1146px;
   display: flex;
   justify-content: space-between;
@@ -954,8 +933,7 @@ input[type="search"]:focus{
 }
 
 .blog-news-position p{
-  margin: 0;
-  margin-bottom: -1px;
+  margin: 0 0 -1px 0;
 }
 
 .blog-news-position{
@@ -1049,7 +1027,7 @@ input[type="search"]:focus{
 .interactive-map{
   width: 100%;
   position: relative;
-  height:0px;
+  height:0;
   border: none;
 }
 
@@ -1063,10 +1041,9 @@ iframe{
 
 /*Блок с адресом на карте*/
 .map{
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
   width: 1200px;
   position: relative;
-  margin-top: 40px;
   height: 430px;
   overflow: hidden;
 }
@@ -1127,11 +1104,9 @@ iframe{
   padding-bottom: 13px;
   display: block;
   width: 250px;
-  margin: 0 auto;
+  margin: 26px auto 30px auto;
   text-align: center;
   border-radius: 22px;
-  margin-top: 26px;
-  margin-bottom: 30px;
 }
 
 /*Модалка*/
@@ -1147,8 +1122,7 @@ iframe{
   left: 50%;
   margin-left: -239px;
   margin-top: -200px;
-  padding: 25px;
-  padding-top: 15px;
+  padding: 15px 25px 25px 25px;
   border-radius: 10px;
   z-index: 100;
   box-sizing: border-box;
@@ -1158,8 +1132,7 @@ iframe{
   font: inherit;
   font-size: 24px;
   color: #323232;
-  margin:0;
-  margin-bottom: 20px;
+  margin:0 0 20px 0;
 }
 
 .modal-feedback p{
@@ -1174,9 +1147,7 @@ iframe{
   box-sizing: border-box;
   width: 268px;
   padding: 8px 15px;
-  margin: 0;
-  margin-right: auto;
-  margin-bottom: 20px;
+  margin: 0 auto 20px 0;
   border:1px solid rgba(178,178,178,0.52);
   border-radius: 5px;
   outline: none;
@@ -1281,7 +1252,7 @@ iframe{
   width: 36px;
   vertical-align: middle;
   height: 36px;
-  margin-right: 8px;
+  margin-right: 10px;
   border: 3px solid rgba(255,255,255,0.5);
   box-shadow: inset 0 0 0 1px white;
   border-radius: 50%;
@@ -1498,7 +1469,7 @@ iframe{
 .image-crate,
 .image-crate-str{
   display: block;
-  font-size: 0px;
+  font-size: 0;
   width: 33px;
   height: 33px;
   background-image: url(../img/ice_items/creamy_orange.jpg);
@@ -1617,17 +1588,14 @@ iframe{
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
-  margin: 0 auto;
-  margin-top: -4px;
-
+  margin: -4px auto 0 auto;
 }
 
 /*ФОРМЫ*/
 .filters{
   width: 1200px;
-  margin: 0 auto;
+  margin: 14px auto 0 auto;
   padding-left: 25px;
-  margin-top:14px;
   border: none;
 }
 
@@ -1653,15 +1621,11 @@ iframe{
   width: 194px;
   line-height: 18px;
   color: white ;
-  margin: 0;
-  margin-top: auto;
-  margin-right: 15px;
+  margin:auto 15px 0 0;
 }
 
 .sorting-select p{
-  margin: 0;
-  margin-left:16px;
-  margin-bottom:4px;
+  margin: 0 0 4px 16px;
 }
 
 .sorting-select select{
@@ -1717,9 +1681,7 @@ select:hover + .select{
 
 .range-controls{
   position: relative;
-  margin: 0;
-  margin-top: auto;
-  margin-right: 15px;
+  margin: auto 15px 0 0;
   width: 220px;
   height: 36px;
   padding: 5px 22px;
@@ -1782,14 +1744,11 @@ select:hover + .select{
 
 /*Форма радиобаттонов*/
 .radiobutton-sorting{
-  margin: 0;
-  margin-top: auto;
+  margin: auto 0 0 0;
 }
 
 .radiobutton-sorting p{
-  margin: 0;
-  margin-bottom:6px;
-  margin-left: 15px;
+  margin: 0 0 6px 15px;
 }
 
 .radiobutton-sorting label{
@@ -1839,14 +1798,11 @@ select:hover + .select{
 
 /*Чекбоксы*/
 .checkbox-sorting{
-  margin: 0;
-  margin-top: 17px;
+  margin: 17px 0 0 0;
 }
 
 .checkbox-sorting p{
-  margin: 0;
-  margin-left: 16px;
-  margin-bottom: 6px;
+  margin: 0 0 6px 16px;
 }
 
 .checkbox-sorting div{
@@ -1863,7 +1819,7 @@ select:hover + .select{
 }
 
 .checkbox-sorting label{
-position: relative;
+  position: relative;
 }
 
 .checkbox-sorting label:nth-child(2){
@@ -1930,8 +1886,7 @@ position: relative;
 /*Каталог*/
 .items{
   width: 1172px;
-  margin: 0 auto;
-  margin-top: 83px;
+  margin: 83px auto 0 auto;
   padding: 0;
   list-style: none;
   line-height: 22px;
@@ -1975,8 +1930,7 @@ position: relative;
 /*Пагинатор*/
 .pagination{
   width: 1146px;
-  margin: 0 auto;
-  margin-top: -17px;
+  margin: -17px auto 0 auto;
   border-bottom: 1px solid rgba(255,255,255,0.3);
   padding-bottom: 8px;
 }
