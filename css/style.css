@@ -193,8 +193,8 @@ a{
   display: block;
 }
 
-.site-navigation li:first-child:hover .btn-hover,
-.site-navigation li:first-child:hover .a_color{
+.sub-menu-hover:hover .btn-hover,
+.sub-menu-hover:hover .a_color{
   background-color: #f7f6f3;
   text-decoration: none;
   color: #323232;
