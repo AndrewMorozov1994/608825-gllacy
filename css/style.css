@@ -240,7 +240,7 @@ a{
 
 .mode{
   display: block;
-  margin-top: 22px;
+  margin-top: 25px;
   text-align: right;
   padding-right: 9px;
   line-height: 2px;
@@ -497,11 +497,11 @@ input[type="search"]:focus{
   position: relative;
   margin: 0 auto;
   width: 1200px;
-  top: -57px;
+  top: -56px;
 }
 .main-container-index{
   position: relative;
-  margin: -137px auto 0 auto;
+  margin: -136px auto 0 auto;
   width: 1200px;
 }
 
