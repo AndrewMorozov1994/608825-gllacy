@@ -51,7 +51,7 @@ a{
 
 .btn-hover:active{
   background-color: rgba(248, 247, 244, 0.988);;
-  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.5);
+  box-shadow: inset 0 2px 1px 0 rgba(105, 105, 105, 0.5);
 }
 
 /*для всех ссылок С ГРАДИЕНТОМ*/  /*не забыть расставить класс для нужных элементов в html*/
@@ -244,8 +244,6 @@ a{
   text-align: right;
   padding-right: 9px;
   line-height: 2px;
-
-
 }
 
 .control {
@@ -266,9 +264,7 @@ a{
   display: block;
   width: 31px;
   height: 31px;
-  background-color: rgba(255, 255, 255, 0.2);
-  background-image: url("../img/svg-gllacy/loupe.svg");
-  background-repeat:no-repeat;
+  background: rgba(255, 255, 255, 0.2) url("../img/svg-gllacy/loupe.svg") no-repeat;
   background-position: center center;
   border-radius: 50%;
 }
@@ -322,7 +318,7 @@ a{
 }
 
 .control-login-wrapper{
-  margin-top: 0px;
+  margin-top: 0;
   display: flex;
   width: 240px;
   justify-content: space-between;
@@ -335,7 +331,7 @@ a{
   list-style: none;
   width: 120px;
   color: #323232;
-  padding-left: 0px;
+  padding-left: 0;
   margin-top: 2px;
 }
 
@@ -380,8 +376,7 @@ a{
   height: 20px;
   top: 5px;
   left: 16px;
-  background-repeat:no-repeat;
-  background-image: url(../img/svg-gllacy/entrancewhite.svg.png);
+  background: url(../img/svg-gllacy/entrancewhite.svg.png) no-repeat;
 }
 
 .btn-login:hover::before,
@@ -410,9 +405,7 @@ a{
 
 .control-search a:hover,
 .control-search a:focus{
-  background-position: center center;
-  background-image: url("../img/svg-gllacy/loupe_black.svg");
-  background-repeat:no-repeat;
+  background: url("../img/svg-gllacy/loupe_black.svg") no-repeat center;
 }
 
 .control-search{
@@ -420,10 +413,7 @@ a{
 }
 
 .control-search:hover a{
-  background: #f7f6f3;
-  background-position: center center;
-  background-image: url("../img/svg-gllacy/loupe_black.svg");
-  background-repeat:no-repeat;
+  background: #f7f6f3 no-repeat url("../img/svg-gllacy/loupe_black.svg") center;
 }
 
 /*Инпут поиска*/
@@ -434,7 +424,7 @@ a{
   width: 342px;
   background-color: #f8f7f4;
   border-radius: 5px;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   z-index: 7;
 }
 
@@ -493,8 +483,7 @@ input[type="search"]:focus{
   height: 20px;
   top: 5px;
   left: 15px;
-  background-image: url(../img/svg-gllacy/basket.svg);
-  background-repeat:no-repeat;
+  background: url(../img/svg-gllacy/basket.svg) no-repeat;
 }
 
 .btn-crate:hover::before,
@@ -519,9 +508,7 @@ input[type="search"]:focus{
 /*Все для слайдера*/
 .site-wrapper {
   min-width: 1200px;
-  background-image: url("../img/slider/ice_bg1.png");
-  background-repeat: no-repeat;
-  background-position: top center;
+  background: url("../img/slider/ice_bg1.png") no-repeat top center;
 }
 
 .site-wrapper::before,
@@ -624,18 +611,15 @@ input[type="search"]:focus{
 }
 
 #product-1:checked ~ .site-wrapper {
-  background-color: #849d8f;
-  background-image: url("../img/slider/ice_bg1.png");
+  background: #849d8f url("../img/slider/ice_bg1.png") no-repeat top center;
 }
 
 #product-2:checked ~ .site-wrapper {
-  background-color: #8996a6;
-  background-image: url("../img/slider/ice_bg2.png");
+  background: #8996a6 url("../img/slider/ice_bg2.png") no-repeat top center;
 }
 
 #product-3:checked ~ .site-wrapper {
-  background-color: #9d8b84;
-  background-image: url("../img/slider/ice_bg3.png");
+  background: #9d8b84 url("../img/slider/ice_bg3.png") no-repeat top center;
 }
 
 #product-1:checked ~ .site-wrapper #slide1,
@@ -686,32 +670,26 @@ input[type="search"]:focus{
 .sale-raze .btn-raze,
 .sale-chocolate .btn-chocolate{
   float:right;
-  padding: 11px 23px;
-  padding-bottom: 12px;
+  padding: 11px 23px 12px 23px;
   margin-bottom: 23px;
   margin-right: 20px;
   border-radius: 22px;
 }
 
 .sale-chocolate .btn-chocolate{
-  padding: 10px 21px;
-  padding-bottom: 12px;
+  padding: 10px 21px 12px 21px;
 }
 
 /*Блок с малиной*/
 .sale-raze{
-  background-color: #630e1e;
-  background-image: url("../img/raspberries_bg.jpg");
-  background-repeat:repeat-y;
+  background: #630e1e url("../img/raspberries_bg.jpg") repeat-y;
   width: 560px;
   min-height: 229px;
 }
 
 /*Блок м шоколадом*/
 .sale-chocolate{
-  background-color: #3d2317;
-  background-image: url("../img/chocolate_bg.jpg");
-  background-repeat:repeat-y;
+  background: #3d2317 url("../img/chocolate_bg.jpg") repeat-y;
   width: 560px;
   min-height: 229px;
   z-index: 2;
@@ -740,7 +718,7 @@ input[type="search"]:focus{
 .catalog-list li:hover{
   border-radius: 5px;
   background-color: rgba(248, 247, 244,0.2);
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
@@ -761,7 +739,7 @@ input[type="search"]:focus{
   margin-top: -53px;
   font-size: 45px;
   font-weight: 700;
-  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+  text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .weight{
@@ -780,10 +758,9 @@ input[type="search"]:focus{
 .product-card .hit{
   width: 61px;
   height: 61px;
-  background-color: white;
   position: absolute;
   border-radius: 50%;
-  background-image: url("../img/svg-gllacy/hit.svg");
+  background: white url("../img/svg-gllacy/hit.svg");
 }
 
 .ruble{
@@ -810,9 +787,7 @@ input[type="search"]:focus{
 /*Все для вафельки*/
 .seo{
   margin: -30px auto 0 auto;
-  background-color: #e9dcc0;
-  background-image: url("../img/waffle_bg.jpg");
-  background-repeat:repeat-y;
+  background: #e9dcc0 url("../img/waffle_bg.jpg") repeat-y;
   color: #323232;
   line-height: 22px;
   font-weight: 400;
@@ -833,8 +808,7 @@ input[type="search"]:focus{
 /*Список в вафле*/
 .making {
   margin:0;
-  padding:0;
-  padding-top: 18px;
+  padding: 18px 0 0 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -923,9 +897,7 @@ input[type="search"]:focus{
 }
 
 .blog-news{
-  background-color: #ffffff;
-  background-image:  url("../img/strowberry_bg_news.jpg");
-  background-repeat:no-repeat;
+  background: #ffffff url("../img/strowberry_bg_news.jpg") no-repeat;
   color:#323232;
   width: 560px;
   min-height: 220px;
@@ -961,10 +933,9 @@ input[type="search"]:focus{
   line-height: 22px;
   font-weight: 400;
   color: #5a5a5a;
-  background-color: #f8f7f4;
   width: 560px;
   min-height: 220px;
-  background-image: url("../img/svg-gllacy/bg-post.svg");
+  background: #f8f7f4 url("../img/svg-gllacy/bg-post.svg");
 }
 
 .dispatch-content p{
@@ -1206,8 +1177,7 @@ iframe{
   display: block;
   width: 18px;
   height: 17px;
-  background-image: url(../img/svg-gllacy/cross-big.svg);
-  background-repeat:no-repeat;
+  background: url(../img/svg-gllacy/cross-big.svg) no-repeat;
   top: 15px;
   right: 15px;
 }
@@ -1298,7 +1268,7 @@ iframe{
 .social-vk:active,
 .social-fb:active,
 .social-tw:active{
-  box-shadow: inset 0px 3px 1px 0px rgba(136, 136, 136, 0.5);
+  box-shadow: inset 0 3px 1px 0 rgba(136, 136, 136, 0.5);
 }
 
 /*Список ссылок в футере*/
@@ -1359,8 +1329,7 @@ iframe{
   display: block;
   width: 15px;
   height: 13px;
-  background-image:  url("../img/svg-gllacy/heart.svg");
-  background-repeat: no-repeat;
+  background:  url("../img/svg-gllacy/heart.svg") no-repeat;
 }
 
 .for_suppliers:hover::before{
@@ -1439,7 +1408,7 @@ iframe{
   left:-425px;
   top: 36px;
   border-radius: 5px;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .crate-full table{
@@ -1451,12 +1420,11 @@ iframe{
 
 .delete-item{
   display: block;
-  font-size: 0px;
+  font-size: 0;
   border: none;
   width: 11px;
   height: 11px;
-  background-image: url(../img/svg-gllacy/cross-small.svg);
-  background-repeat:no-repeat;
+  background: no-repeat url(../img/svg-gllacy/cross-small.svg);
 }
 
 .crate-full button[type="button"]{
@@ -1471,8 +1439,7 @@ iframe{
   font-size: 0;
   width: 33px;
   height: 33px;
-  background-image: url(../img/ice_items/creamy_orange.jpg);
-  background-repeat:no-repeat;
+  background: no-repeat url(../img/ice_items/creamy_orange.jpg);
   background-size:cover;
   background-origin: border-box;
   background-clip: content-box;
@@ -1562,7 +1529,6 @@ iframe{
 .active-pages span:active{
   color: #ffbc9e;
   border-bottom: 1px solid rgba(255,188,158,0.3);
-
 }
 
 .active-pages span::after{
@@ -1760,9 +1726,7 @@ select:hover + .select{
   display: flex;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.2);
-  padding: 1.5px;
-  padding-left: 33px;
-  padding-right: 15px;
+  padding: 1.5px 15px 1.5px 33px;
   box-sizing: border-box;
   border-radius: 23px;
 }
@@ -1774,18 +1738,14 @@ select:hover + .select{
   top: 3px;
   left: -22px;
   box-sizing: border-box;
-  background-image: url(../img/svg-gllacy/radio-off.svg);
-  background-repeat:no-repeat;
-  background-position: center center;
+  background:url(../img/svg-gllacy/radio-off.svg) no-repeat center center ;
   opacity: 0.5;
   transform: scale(0.85);
 }
 
 .radiobutton-sorting input[type="radio"]:checked + .radio-indicator{
   border: none;
-  background-image: url(../img/svg-gllacy/radio-on.svg);
-  background-repeat:no-repeat;
-  background-position: center center;
+  background: url(../img/svg-gllacy/radio-on.svg) no-repeat center center;
 }
 
 .radiobutton-sorting input[type="radio"]{
@@ -1812,9 +1772,7 @@ select:hover + .select{
   justify-content: space-between;
   box-sizing: border-box;
   border-radius: 23px;
-  padding: 1.5px;
-  padding-left: 36px;
-  padding-right: 18px;
+  padding: 1.5px 18px 1.5px 36px;
   margin-left: 1px;
 }
 
@@ -1837,10 +1795,8 @@ select:hover + .select{
   width: 20px;
   height: 20px;
   box-sizing: border-box;
-  background-image: url(../img/svg-gllacy/checkbox-off.svg);
+  background: url(../img/svg-gllacy/checkbox-off.svg) no-repeat center center;
   background-size: cover;
-  background-repeat:no-repeat;
-  background-position: center center;
   opacity: 0.5;
 }
 
@@ -1866,7 +1822,7 @@ select:hover + .select{
   padding: 2px 25px;
   border-radius: 22px;
   border: none;
-  box-shadow: inset 0px 0px 0px 2px rgb(255,255,255);
+  box-shadow: inset 0 0 0 2px rgb(255,255,255);
   background-color: rgba(255, 255, 255, 0.2);
   outline: none;
 
@@ -1879,7 +1835,7 @@ select:hover + .select{
 
 .sorting-button:active {
   background-color: rgb(237, 237, 237);
-  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.4);
+  box-shadow: inset 0 2px 1px 0 rgba(105, 105, 105, 0.4);
   color: #323232;
 }
 
@@ -1922,7 +1878,7 @@ select:hover + .select{
 
 .items li:hover{
   background-color: rgba(248, 247, 244,0.2);
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   z-index: 1;
 }
@@ -1995,9 +1951,7 @@ select:hover + .select{
   position: absolute;
   width: 12px;
   height: 12px;
-  background-image: url(../img/svg-gllacy/icon-right-small.svg);
-  background-repeat:no-repeat;
-  background-position: 1px 0;
+  background: url(../img/svg-gllacy/icon-right-small.svg) no-repeat 1px 0;
 }
 
 .back::before{
