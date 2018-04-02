@@ -1194,7 +1194,13 @@ iframe{
 }
 
 .modal-show{
+  position: fixed;
   display: block;
+  top: 50%;
+  left: 50%;
+  animation-name: bounse;
+  animation-duration: 0.5s;
+  z-index: 350;
 }
 
 /*Центровка футера*/
@@ -1969,4 +1975,11 @@ select:hover + .select{
 .next::after{
   top:10px;
   right: -25px;
+}
+
+@keyframes bounse {
+  0%   {transform: scale(0) ;}
+  60%  {transform: scale(1.1) ;}
+  90%  {transform: scale(0.9);}
+  100% {transform: scale(1);}
 }
