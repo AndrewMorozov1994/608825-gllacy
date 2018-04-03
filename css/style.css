@@ -1156,13 +1156,16 @@ iframe{
 }
 
 .modal-close{
+  position: absolute;
+  top: 15px;
+  right: 15px;
   padding: 0;
   margin: 0;
   border: none;
   font-size: 0;
-  width: 0;
-  height: 0;
-  background-color: transparent;
+  width: 18px;
+  height: 17px;
+  background: transparent url("../img/svg-gllacy/cross-big.svg") no-repeat;
   cursor: pointer;
 }
 
@@ -1170,17 +1173,6 @@ iframe{
   float: right;
   margin-top: 10px;
   padding: 5px 25px;
-}
-
-.modal-feedback button[type="button"]::before{
-  content: "";
-  position: absolute;
-  display: block;
-  width: 18px;
-  height: 17px;
-  background: url(../img/svg-gllacy/cross-big.svg) no-repeat;
-  top: 15px;
-  right: 15px;
 }
 
 .modal-overlay{
