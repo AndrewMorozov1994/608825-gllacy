@@ -1767,12 +1767,16 @@ select:hover + .select{
   margin-left: 10px;
 }
 
+.radiobutton-sorting label:not(.first-radio){
+  margin-left: 36px;
+}
+
 .radiobutton-sorting div{
   width: 415px;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  justify-content: space-between;
+  justify-content: flex-start;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 1.5px 15px 1.5px 23px;
   border-radius: 23px;
