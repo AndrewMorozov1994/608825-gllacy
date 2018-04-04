@@ -42,6 +42,8 @@ window.addEventListener("keydown", function (evt) {
 enter.addEventListener("submit", function(evt){
   if (!login.value || !password.value){
     evt.preventDefault();
-
+    enter.classList.remove("modal-error");
+    enter.offsetWidth = enter.offsetWidth;
+    enter.classList.add("modal-error");
   }
 });
