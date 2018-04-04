@@ -1420,10 +1420,7 @@ iframe{
 }
 
 .catalog-site-navigation{
-  margin-bottom: 0;
-  width:  500px;
-  margin-top: 12px;
-  padding-left:9px;
+  width: 500px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1775,7 +1772,6 @@ select:hover + .select{
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 1.5px 15px 1.5px 33px;
-  box-sizing: border-box;
   border-radius: 23px;
 }
 
@@ -1817,6 +1813,7 @@ select:hover + .select{
   width: 703px;
   background-color: rgba(255, 255, 255, 0.2);
   display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-between;
   box-sizing: border-box;
