@@ -38,7 +38,6 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-
 enter.addEventListener("submit", function(evt){
   if (!login.value || !password.value){
     evt.preventDefault();

@@ -1423,6 +1423,7 @@ iframe{
   width: 500px;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 /*Корзина*/
@@ -1763,15 +1764,17 @@ select:hover + .select{
 
 .radiobutton-sorting label{
   position: relative;
+  margin-left: 10px;
 }
 
 .radiobutton-sorting div{
   width: 415px;
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.2);
-  padding: 1.5px 15px 1.5px 33px;
+  padding: 1.5px 15px 1.5px 23px;
   border-radius: 23px;
 }
 
@@ -1818,12 +1821,13 @@ select:hover + .select{
   justify-content: space-between;
   box-sizing: border-box;
   border-radius: 23px;
-  padding: 1.5px 18px 1.5px 36px;
+  padding: 1.5px 18px 1.5px 16px;
   margin-left: 1px;
 }
 
 .checkbox-sorting label{
   position: relative;
+  margin-left: 20px;
 }
 
 .checkbox-sorting label:nth-child(2){
@@ -1871,7 +1875,6 @@ select:hover + .select{
   box-shadow: inset 0 0 0 2px rgb(255,255,255);
   background-color: rgba(255, 255, 255, 0.2);
   outline: none;
-
 }
 
 .sorting-button:hover{
