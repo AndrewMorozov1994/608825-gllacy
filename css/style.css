@@ -1195,6 +1195,25 @@ iframe{
   z-index: 350;
 }
 
+.modal-error{
+  animation-name: sh;
+  animation-duration: 1s;
+}
+
+@keyframes bounse {
+  0%   {transform: scale(0) ;}
+  60%  {transform: scale(1.1) ;}
+  90%  {transform: scale(0.9);}
+  100% {transform: scale(1);}
+}
+
+@keyframes sh {
+  0%   {transform: scale(1) ;}
+  60%  {transform: scale(1.5) ;}
+  90%  {transform: scale(0.5);}
+  100% {transform: scale(1);}
+}
+
 /*Центровка футера*/
 .page-footer{
   margin: 0 auto;
