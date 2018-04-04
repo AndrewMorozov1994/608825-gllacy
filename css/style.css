@@ -1239,6 +1239,7 @@ iframe{
   background-color: transparent;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .page-footer-index{
   margin-top: -136px;
@@ -1253,6 +1254,7 @@ iframe{
   margin-top: 20px;
   margin-left: 28px;
   word-wrap: break-word;
+
 }
 
 .social{
@@ -1331,6 +1333,7 @@ iframe{
 .info li{
   margin-left: 35px ;
   width:140px;
+  margin-bottom: 4px;
 }
 
 .info li:nth-child(3){
